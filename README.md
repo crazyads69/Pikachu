@@ -10,8 +10,8 @@
 
 ## Môn Học
 
--   Tên môn học: Lập Trình Trực Quan (IT008.O11)
--   Tên đồ án: Trò chơi Trúc Xanh (Pikachu) <img alt="Pikachu" height="26px" width="26px" src="https://cdn-icons-png.flaticon.com/512/188/188987.png" />
+-   **Tên môn học:** Lập Trình Trực Quan (IT008.O11)
+-   **Tên đồ án:** Trò chơi Trúc Xanh (Pikachu) <img alt="Pikachu" height="26px" width="26px" src="https://cdn-icons-png.flaticon.com/512/188/188987.png" />
 
 ## Thành Viên Dự Án
 
@@ -21,8 +21,8 @@
 
 ## Công Nghệ Sử Dụng
 
--   Ngôn ngữ lập trình: C#
--   Thư viện và framework: Winform(.NET), SQLite
+-   **Ngôn ngữ lập trình:** C#
+-   **Thư viện và framework:** Winform(.NET), SQLite
 
 ## Bảng phân chia công việc
 
