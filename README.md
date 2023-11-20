@@ -79,4 +79,7 @@
 ## Cải Tiến Cần Thực Hiện
 
 Dưới đây là danh sách các cải tiến hoặc tính năng mà chúng tôi muốn thực hiện nếu có thời gian:
-...
+
+- Chức năng đăng nhập, đăng ký cho người dùng.
+- Chức năng bảng xếp hạng trực tuyến.
+- Chức năng nhiều người chơi trực tuyến.
