@@ -61,7 +61,7 @@
 -   Quản lý thông tin người dùng như tên, điểm số và lịch sử chơi.
 -   Đảm bảo tính bảo mật và xác thực đối với thông tin người dùng.
 
-## 1.2.5. Lập Trình Chức Năng Bảng Xếp Hạng Trực Tuyến
+## 1.2.5. Lập Trình Chức Năng Bảng Xếp Hạng Cục Bộ
 
 -   Xây dựng chức năng hiển thị bảng xếp hạng điểm cao nhất của người chơi.
 -   Cập nhật điểm số của người chơi sau mỗi lần chơi và hiển thị các vị trí đứng cao trong bảng xếp hạng.
