@@ -24,7 +24,8 @@ namespace Pikachu
 					connection.Open();
 
 					// Create players table
-					string createPlayersTableQuery = "CREATE TABLE IF NOT EXISTS players (" + "player_id INTEGER PRIMARY KEY AUTOINCREMENT," + "player_name TEXT NOT NULL," + "high_score INTEGER," + "total_games_played INTEGER," + "total_times_played INTEGER" + ")";
+					string createPlayersTableQuery = "CREATE TABLE IF NOT EXISTS players (" + "player_id INTEGER PRIMARY KEY AUTOINCREMENT," + "player_name TEXT NOT NULL," + "high_score INTEGER," + "total_games_played INTEGER," + "total_times_played INTEGER," + "" +
+						"is_playing BOOLEAN DEFAULT FALSE" + ")";
 
 					using (SQLiteCommand command = new SQLiteCommand(createPlayersTableQuery, connection))
 					{
@@ -91,6 +92,23 @@ namespace Pikachu
 					{
 						command.ExecuteNonQuery();
 					}
+				}
+			}
+		}
+		public static void InsertPlayerName(string playerName)
+		{
+			string connectionString = $"Data Source={databaseFile}";
+
+			using (SQLiteConnection connection = new SQLiteConnection(connectionString))
+			{
+				connection.Open();
+
+				string query = "INSERT INTO players (player_name, is_playing) VALUES (@playerName, TRUE) ";
+
+				using (SQLiteCommand command = new SQLiteCommand(query, connection))
+				{
+					command.Parameters.AddWithValue("@playerName", playerName);
+					command.ExecuteNonQuery();
 				}
 			}
 		}

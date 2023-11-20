@@ -42,7 +42,7 @@
 			this.uiLabel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
 			this.uiLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.uiLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-			this.uiLabel1.Location = new System.Drawing.Point(231, 88);
+			this.uiLabel1.Location = new System.Drawing.Point(201, 91);
 			this.uiLabel1.Name = "uiLabel1";
 			this.uiLabel1.Size = new System.Drawing.Size(238, 67);
 			this.uiLabel1.Style = Sunny.UI.UIStyle.Custom;
@@ -75,6 +75,7 @@
 			this.uiButton1.TabIndex = 3;
 			this.uiButton1.Text = "Trò chơi mới";
 			this.uiButton1.TipsFont = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+			this.uiButton1.Click += new System.EventHandler(this.uiButton1_Click);
 			// 
 			// uiButton3
 			// 

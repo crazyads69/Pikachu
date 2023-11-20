@@ -21,3 +21,8 @@
 \\Mac\Home\Documents\Project\Pikachu\bin\Debug\EntityFramework.xml
 \\Mac\Home\Documents\Project\Pikachu\bin\Debug\EntityFramework.SqlServer.xml
 \\Mac\Home\Documents\Project\Pikachu\bin\Debug\System.Data.SQLite.xml
+\\Mac\Home\Documents\Project\Pikachu\obj\Debug\Pikachu.CreateUser.resources
+\\Mac\Home\Documents\Project\Pikachu\obj\Debug\Interop.MediaPlayer.dll
+\\Mac\Home\Documents\Project\Pikachu\obj\Debug\Interop.WMPDXMLib.dll
+\\Mac\Home\Documents\Project\Pikachu\obj\Debug\Interop.WMPLib.dll
+\\Mac\Home\Documents\Project\Pikachu\obj\Debug\Pikachu.csproj.ResolveComReference.cache

@@ -13,7 +13,10 @@ namespace Pikachu
 
 		private void uiButton1_Click(object sender, EventArgs e)
 		{
-
+			var createUser = new CreateUser();
+			createUser.ShowDialog();
 		}
+
+
 	}
 }
