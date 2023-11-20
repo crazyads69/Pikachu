@@ -6,23 +6,27 @@
 
 <h1 align="center"><b>LẬP TRÌNH TRỰC QUAN - IT008</b></h1>
 
-# Báo Cáo Đồ Án Môn Học Lập Trình Trực Quan
+<h1 align="center"><b>Báo Cáo Đồ Án Môn Học Lập Trình Trực Quan</b></h1>
 
 ## Môn Học
 
--   **Tên môn học:** Lập Trình Trực Quan (IT008.O11)
+-   **Tên môn học:** Lập Trình Trực Quan (IT008)
+-   **Mã môn học:** IT008.O11
+-   **Giảng viên:** Nguyễn Thị Xuân Hương
 -   **Tên đồ án:** Trò chơi Trúc Xanh (Pikachu) <img alt="Pikachu" height="26px" width="26px" src="https://cdn-icons-png.flaticon.com/512/188/188987.png" />
 
 ## Thành Viên Dự Án
 
--   Lê Minh Trí - 22521543
--   Bùi Lê Anh Nguyên - 22521718
--   Ngô Trần Quang Sang - 22521241
+| **STT** | **MSSV**     | **Họ và Tên**            | **GitHub**                            | **Email**                  |
+| :-- | :------- | :------------------- | :-------------------------------- | :--------------------- |
+| 1   | 22521718 | Bùi Lê Anh Nguyên        | https://github.com/nb150301     | 22521718@gm.uit.edu.vn |
+| 2   | 22521241 | Ngô Trần Quang Sang   |        | 22521241@gm.uit.edu.vn |
+| 3   | 22521543 | Lê Minh Trí | https://github.com/crazyads69          | 22521543@gm.uit.edu.vn |
 
 ## Công Nghệ Sử Dụng
 
 -   **Ngôn ngữ lập trình:** C#
--   **Thư viện và framework:** Winform(.NET), SQLite
+-   **Thư viện và framework:** Winform (.NET), SQLite
 
 ## Bảng phân chia công việc
 
