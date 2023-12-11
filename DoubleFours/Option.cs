@@ -58,6 +58,7 @@ namespace DoubleFours
 
         public void Pause()
         {
+
             if (pause == false)
             {
                 pause = true;

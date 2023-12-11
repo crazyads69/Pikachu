@@ -20,17 +20,17 @@ namespace DoubleFours
         #endregion
 
         #region Initialize
-        public ChessBoardManager(Panel pnlChessBoard, int lost)
+        public ChessBoardManager(Panel pnlChessBoard)
         {
             this.pnlChessBoard = pnlChessBoard;
 
-            DrawChessBoard(lost);
+            DrawChessBoard();
         }
         #endregion
 
         #region Method
         //tao ban co
-        public void DrawChessBoard(int lost)
+        public void DrawChessBoard()
         {
             pnlChessBoard.Controls.Clear();//xóa bàn cờ để vẽ lại
             matrix = new Chess[Cons.CHESS_BOARD_WIDTH + 2, Cons.CHESS_BOARD_HEIGHT + 2];
@@ -70,17 +70,10 @@ namespace DoubleFours
 
                     pokemon.Click += Pokemon_Click;
 
+
                     pnlChessBoard.Controls.Add(pokemon);
                     old_pokemon = pokemon;
-
                     matrix[j, i] = pokemon;
-                    if (lost + 1 > 0)
-                    {
-                        if (j == Cons.CHESS_BOARD_WIDTH && i>0)
-                            lost += 2;
-                        lost--;
-                        pokemon.BackgroundImage = null;
-                    }
                 }
 
                 old_pokemon.Location = new Point(0, old_pokemon.Location.Y + Cons.CHESS_HEIGHT);
@@ -141,6 +134,8 @@ namespace DoubleFours
                     }
 
                 }
+
+
             }
         }
 

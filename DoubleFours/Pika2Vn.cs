@@ -24,7 +24,6 @@ namespace DoubleFours
         Item items;
         InfinityStones stone;
         public Option options;
-        public bool firstClick = false;
         private bool endgame = false;
         #endregion
 
@@ -34,9 +33,11 @@ namespace DoubleFours
 
             InitializeComponent();
             Timer.Interval = Cons.LIFETIME_INTERVAL;
+
             CollectionImage.PokemonImage = CollectionImage.CreatePokemon(DoubleFours.Properties.Resources.pokemongame,
             Cons.POKE_NUMBER_IMAGE, Cons.POKE_STATUS);
-            Program.menu.pctbTiepTuc.Enabled = true;
+
+
             //NewGame();
 
         }
@@ -44,10 +45,10 @@ namespace DoubleFours
 
         #region Methods
 
-        public void NewGame(int lost)
+        public void NewGame()
         {
             this.SuspendLayout();
-            chessBoard = new ChessBoardManager(pnlChessBoard, lost);
+            chessBoard = new ChessBoardManager(pnlChessBoard);
             //chessBoard.KhoiTaoStone(ptbstone1, ptbstone2, ptbstone3, ptbstone4, ptbstone5, ptbstone6);
             //chessBoard.resetStone();
             stone = new InfinityStones(ptbstone1, ptbstone2, ptbstone3, ptbstone4, ptbstone5, ptbstone6, chessBoard);
@@ -60,7 +61,9 @@ namespace DoubleFours
             endgame = false;
             Option.pause = false;
             UpdateStatus(endgame, Option.pause);
+
             Timer.Start();
+
             this.ResumeLayout();
         }
 
@@ -71,8 +74,8 @@ namespace DoubleFours
             lifeTime.UpdateLifeTime();
             if (progressBar.Width == 0)
                 LoseGame();
-            LoadDatabase load = new LoadDatabase();
-            if (chessBoard.coupleRemain - load.LoadLostFromDatabase() / 2 == 0)
+
+            if (chessBoard.coupleRemain == 0)
                 WinGame();
 
         }
@@ -279,29 +282,11 @@ namespace DoubleFours
 
         private void Form1_FormClosed(object sender, FormClosedEventArgs e)
         {
-            SaveData save = new SaveData();
-            LoadDatabase load = new LoadDatabase();
-            save.Save(64 - chessBoard.coupleRemain + load.LoadLostFromDatabase() / 2);
             Program.menu.Close();
         }
         #endregion
 
         private void pnlChessBoard_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void pctbPlay_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Pika2Vn_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pctbLifeTime_Click(object sender, EventArgs e)
         {
 
         }
