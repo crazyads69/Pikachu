@@ -1,0 +1,179 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="DoubleFours.Chess">
+    <Position X="6.25" Y="5.25" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="true" />
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>RABAAAAAAAAAAABAAAAAgCAAAAAAAAAAAAAAgAAAYAA=</HashCode>
+      <FileName>Chess.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DoubleFours.ChessBoardManager">
+    <Position X="0.75" Y="2.25" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+      <Compartment Name="Properties" Collapsed="true" />
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <InheritanceLine Type="System.Object" ManuallyRouted="true" FixedToPoint="true">
+      <Path>
+        <Point X="7" Y="1.312" />
+        <Point X="7" Y="1.875" />
+        <Point X="1.5" Y="1.875" />
+        <Point X="1.5" Y="2.25" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAIAAAHAACAAAgAAAAAAADoAAAAQQAIAAAAAAAAAAAA=</HashCode>
+      <FileName>ChessBoardManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DoubleFours.CollectionImage">
+    <Position X="6" Y="2.25" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAA=</HashCode>
+      <FileName>CollectionImage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DoubleFours.Cons">
+    <Position X="3.5" Y="0.5" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AIAAQAAAAAAAAAQAABAAAAAACAIAAAAAAAAAAAAEAAE=</HashCode>
+      <FileName>Cons.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DoubleFours.DFSoundPlayer">
+    <Position X="9" Y="0.5" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>BAASABAAAAAAAAAIAAAAAAIACQAAAAAAAEBAAAAAAAA=</HashCode>
+      <FileName>DFSoundPlayer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DoubleFours.InfinityStones">
+    <Position X="4.25" Y="2.25" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AgAAAAAAAAAAAAAAAAIAAAgAAAAQAAACAABACBABAAA=</HashCode>
+      <FileName>InfinityStones.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DoubleFours.Item">
+    <Position X="7.75" Y="2.25" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>ACAAAAAAAAAIAABAACAAAAAAAAAAAAACIAACAgAAAAA=</HashCode>
+      <FileName>Item.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DoubleFours.Levels">
+    <Position X="4" Y="5.25" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAAAAQAACQBABAAAASAAAACAIBAAAAAEABAABAAAAQ=</HashCode>
+      <FileName>Levels.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DoubleFours.LifeTime">
+    <Position X="2.5" Y="2.25" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <InheritanceLine Type="System.Object" ManuallyRouted="true" FixedToPoint="true">
+      <Path>
+        <Point X="7" Y="1.312" />
+        <Point X="7" Y="1.875" />
+        <Point X="3.25" Y="1.875" />
+        <Point X="3.25" Y="2.25" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>ASAAAARAAAAIBAAAACAAAAABBAAAAABIAAAAEAAAAQA=</HashCode>
+      <FileName>LifeTime.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DoubleFours.Menu">
+    <Position X="2.25" Y="5.25" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAEIAAASAAIACAAAAIABAIhAAAAAAgIA=</HashCode>
+      <FileName>Menu.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DoubleFours.Option">
+    <Position X="9.5" Y="2.25" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <InheritanceLine Type="System.Object" ManuallyRouted="true" FixedToPoint="true">
+      <Path>
+        <Point X="7" Y="1.312" />
+        <Point X="7" Y="1.885" />
+        <Point X="10.25" Y="1.885" />
+        <Point X="10.25" Y="2.25" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAgACAAAAAAAAIAAAAAAAAAAAAACAAAAABABAIUIEA=</HashCode>
+      <FileName>Option.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DoubleFours.Pika2Vn">
+    <Position X="0.5" Y="5.25" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AUAAAKAUAigAWApCAgzBAABCBAEUAAFqBADCRwJXAEA=</HashCode>
+      <FileName>Pika2Vn.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DoubleFours.Program" Collapsed="true">
+    <Position X="10" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAgAIAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="System.Windows.Forms.Form" Collapsed="true">
+    <Position X="2.5" Y="3.75" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="System.Windows.Forms.PictureBox" Collapsed="true">
+    <Position X="7.5" Y="4" Width="1.5" />
+    <TypeIdentifier />
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="System.Object" Collapsed="true">
+    <Position X="6.25" Y="0.75" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
