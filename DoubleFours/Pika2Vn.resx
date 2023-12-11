@@ -123,6 +123,17 @@
   <metadata name="menuStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>112, 17</value>
   </metadata>
+  <data name="BgMusic.OcxState" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4w
+        LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACFTeXN0
+        ZW0uV2luZG93cy5Gb3Jtcy5BeEhvc3QrU3RhdGUBAAAABERhdGEHAgIAAAAJAwAAAA8DAAAAtwAAAAIB
+        AAAAAQAAAAAAAAAAAAAAAKIAAAAAAwAACAAAAAAABQAAAAAAAADwPwMAAAAAAAUAAAAAAAAAAAAIAAIA
+        AAAAAAMAAQAAAAsA//8DAAAAAAALAP//CAACAAAAAAADADIAAAALAAAACAAKAAAAZgB1AGwAbAAAAAsA
+        AAALAAAACwD//wsA//8LAAAACAACAAAAAAAIAAIAAAAAAAgAAgAAAAAACAACAAAAAAALAAAAKwUAAJYB
+        AAAL
+</value>
+  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="pctbHome.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -171,7 +182,7 @@
         XTesb3QPLh88M+QwdP6m681Lt7xuXbu94vbgcOjwnZHokdE77DtTd1PuvriXeW/h/sYH6AdFD6UeVjxS
         fNTws+7PbaOWo6fHXMf6Hwc/vj/OGn/2S8Yv7ycKnpCfVEyqTDZPmU2dmnafvvF05dOJZ+nPFmYKf5X+
         tfa5zvMffnP8rX82YnbiBf/Fp99LXsq/PPRq2aueuYC5R69TXy/MF72Rf3P4LeNt37vwd5MLWe+x7ys/
-        6H7o/ujz8cGn1E+f/gUDmPP8usTo0wAAAAlwSFlzAAALDwAACw8BkvkDpQAAMgFJREFUeF7dnHd0FEfa
+        6H7o/ujz8cGn1E+f/gUDmPP8usTo0wAAAAlwSFlzAAALEgAACxIB0t1+/AAAMgFJREFUeF7dnHd0FEfa
         7sfeu3v3+3a/DffurrPJSoAAkTE5B2UkgUAEkzEYG5MM2N61TTY4ggk2QQSJJJQBkZFEMCBplHMCISGE
         EBgwmPTe56nuHo3EEGzYs+fcP57TMz3T1VW/fuupt6p7xrQ2Ytvz0HO1xP2/Vs99DwVGbH1uS0TQ85sj
         gh+n56xkConYbHILjzc1DjebmoYnmezDk00Oz1AtwhNRZoppXkSEaVvEFhPqquqsiyysedRu2xPL5s6H
@@ -435,7 +446,7 @@
         XTesb3QPLh88M+QwdP6m681Lt7xuXbu94vbgcOjwnZHokdE77DtTd1PuvriXeW/h/sYH6AdFD6UeVjxS
         fNTws+7PbaOWo6fHXMf6Hwc/vj/OGn/2S8Yv7ycKnpCfVEyqTDZPmU2dmnafvvF05dOJZ+nPFmYKf5X+
         tfa5zvMffnP8rX82YnbiBf/Fp99LXsq/PPRq2aueuYC5R69TXy/MF72Rf3P4LeNt37vwd5MLWe+x7ys/
-        6H7o/ujz8cGn1E+f/gUDmPP8usTo0wAAAAlwSFlzAAALDwAACw8BkvkDpQAAJYBJREFUeF7tnHeUVVW6
+        6H7o/ujz8cGn1E+f/gUDmPP8usTo0wAAAAlwSFlzAAALEgAACxIB0t1+/AAAJYBJREFUeF7tnHeUVVW6
         7bHDvZ1u3zHe63Gv3dpGUhWhAEVQUAEFJFQVOYOi2LaxbRMmtLVNKCp6fYoBUVARFIokigiICAhYkVBU
         UUDlHAhVVK7vzt/aexen4GiD/e7t98a4f8yxz9ln77XmnPtb3/rWOqeqlZn9D04RYU/+D8KjVfQDz30v
         ht37VKuoD75uFRGX6NBhybetInVsvyypVfvlyUJwbMaPhV8IZwsDhZuFl4T17ZYlZwr17ZYl2f8d0FZy
@@ -602,7 +613,7 @@
   <data name="pctbHelp.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAIIAAACMCAYAAACwCXGNAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1
-        MAAA6mAAADqYAAAXb5JfxUYAAAAJcEhZcwAACw8AAAsPAZL5A6UAAA6VSURBVHhe7Z17cBXVHcfX8Igd
+        MAAA6mAAADqYAAAXb5JfxUYAAAAJcEhZcwAACxIAAAsSAdLdfvwAAA6VSURBVHhe7Z17cBXVHcfX8Igd
         GKa17ylYQDodO9NxqlCmf9jpjJ0RO4DYdtAWKLVaqAiK1dr6HGbaOloHVKaKPGprWy0tzyogbyKIkohQ
         TJQGURICoT5ASEJ4Jr9+v8nvkuXml5vc3Ef2bM535jOTu3v2nN/5fc/dPbvZ3RvEUbI9KACXgJHgNjAL
         LAJFoBRUgyOgBojCv7mM61iGZbkNt2UdrIt1FmgzXlETzLkYjANPgmJQCxIGZxvWzTbY1nhwsYbhlW8h
@@ -671,7 +682,7 @@
   <data name="pctbFlyColor.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAN8AAAG2CAYAAAD/dVMKAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1
-        MAAA6mAAADqYAAAXb5JfxUYAAAAJcEhZcwAACxAAAAsQAa0jvXUAAP+WSURBVHhe7P0FeFXntu8Bo6Wl
+        MAAA6mAAADqYAAAXb5JfxUYAAAAJcEhZcwAACxMAAAsTAQCanBgAAP+WSURBVHhe7P0FeFXntu8Bo6Wl
         Qrvr7O56T5Vixa1AobhT3N3dAiEQHAJJkARChLi7u7t7iLstn7Kmz/GNudg9p6eXe/Y93/n2vr3f3s/T
         /5OSrLUyM+f4jfEf73zfd/YBgD4Uyf4hRRiMJpEEY5LyPZri/l2/f/3v9dvX/g/V9zfqh+qviDEKAxSx
         jDgQ9cJfpfz/QI6VBuBrFCmvVd6j6Lef87zfo+jXn/c3UJqBrEANBmBfl1jifX1H0xf6lvrRhvrqWZ2F
@@ -4953,17 +4964,6 @@
         vb1bYYbA93x0dDPkl+G+vg1Djx+vh43UmtH+/tVwn5Uwi1gBs4llcB0X3IcTNmKsp4PB9Qgc3IaDjRlq
         2FhZCNyH1fhhWQgGlp1gIFkwYdilwWRhB1vPDiYRO1jDzA5ajxpv1Iij8wY7lxZHOozFZRJ71MNkWwy7
         eP/y4/8jHxP8F1osRWSu1WpuAAAAAElFTkSuQmCC
-</value>
-  </data>
-  <data name="BgMusic.OcxState" mimetype="application/x-microsoft.net.object.binary.base64">
-    <value>
-        AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4w
-        LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACFTeXN0
-        ZW0uV2luZG93cy5Gb3Jtcy5BeEhvc3QrU3RhdGUBAAAABERhdGEHAgIAAAAJAwAAAA8DAAAAtwAAAAIB
-        AAAAAQAAAAAAAAAAAAAAAKIAAAAAAwAACAAAAAAABQAAAAAAAADwPwMAAAAAAAUAAAAAAAAAAAAIAAIA
-        AAAAAAMAAQAAAAsA//8DAAAAAAALAP//CAACAAAAAAADADIAAAALAAAACAAKAAAAZgB1AGwAbAAAAAsA
-        AAALAAAACwD//wsA//8LAAAACAACAAAAAAAIAAIAAAAAAAgAAgAAAAAACAACAAAAAAALAAAAKwUAAJYB
-        AAAL
 </value>
   </data>
   <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">

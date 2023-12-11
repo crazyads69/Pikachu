@@ -41,6 +41,7 @@ namespace DoubleFours
             this.chếĐộChơiToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.avt1 = new System.Windows.Forms.ToolStripMenuItem();
             this.avt2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.BgMusic = new AxWMPLib.AxWindowsMediaPlayer();
             this.percent = new System.Windows.Forms.Label();
             this.pctbPause = new System.Windows.Forms.PictureBox();
             this.pctbHome = new System.Windows.Forms.PictureBox();
@@ -58,10 +59,10 @@ namespace DoubleFours
             this.pctbReset = new System.Windows.Forms.PictureBox();
             this.pctbHelp = new System.Windows.Forms.PictureBox();
             this.pctbFlyColor = new System.Windows.Forms.PictureBox();
-            this.BgMusic = new AxWMPLib.AxWindowsMediaPlayer();
             ((System.ComponentModel.ISupportInitialize)(this.progressBar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctbLifeTime)).BeginInit();
             this.menuStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.BgMusic)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctbPause)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctbHome)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctbPlay)).BeginInit();
@@ -78,7 +79,6 @@ namespace DoubleFours
             ((System.ComponentModel.ISupportInitialize)(this.pctbReset)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctbHelp)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctbFlyColor)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BgMusic)).BeginInit();
             this.SuspendLayout();
             // 
             // Timer
@@ -116,7 +116,6 @@ namespace DoubleFours
             this.pctbLifeTime.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pctbLifeTime.TabIndex = 24;
             this.pctbLifeTime.TabStop = false;
-            this.pctbLifeTime.Click += new System.EventHandler(this.pctbLifeTime_Click);
             // 
             // menuStrip1
             // 
@@ -129,7 +128,7 @@ namespace DoubleFours
             this.menuStrip1.Location = new System.Drawing.Point(-223, -26);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.RenderMode = System.Windows.Forms.ToolStripRenderMode.Professional;
-            this.menuStrip1.Size = new System.Drawing.Size(76, 28);
+            this.menuStrip1.Size = new System.Drawing.Size(73, 28);
             this.menuStrip1.TabIndex = 28;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -140,7 +139,7 @@ namespace DoubleFours
             this.chếĐộChơiToolStripMenuItem});
             this.menuToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.menuToolStripMenuItem.Name = "menuToolStripMenuItem";
-            this.menuToolStripMenuItem.Size = new System.Drawing.Size(63, 24);
+            this.menuToolStripMenuItem.Size = new System.Drawing.Size(61, 24);
             this.menuToolStripMenuItem.Text = "Menu";
             // 
             // chếĐộChơiToolStripMenuItem
@@ -149,7 +148,7 @@ namespace DoubleFours
             this.avt1,
             this.avt2});
             this.chếĐộChơiToolStripMenuItem.Name = "chếĐộChơiToolStripMenuItem";
-            this.chếĐộChơiToolStripMenuItem.Size = new System.Drawing.Size(177, 26);
+            this.chếĐộChơiToolStripMenuItem.Size = new System.Drawing.Size(169, 26);
             this.chếĐộChơiToolStripMenuItem.Text = "Chế Độ Chơi";
             // 
             // avt1
@@ -158,7 +157,7 @@ namespace DoubleFours
             this.avt1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.avt1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             this.avt1.Name = "avt1";
-            this.avt1.Size = new System.Drawing.Size(235, 26);
+            this.avt1.Size = new System.Drawing.Size(227, 26);
             this.avt1.Text = "toolStripMenuItem1";
             this.avt1.Click += new System.EventHandler(this.avt1_Click);
             // 
@@ -168,9 +167,21 @@ namespace DoubleFours
             this.avt2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.avt2.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             this.avt2.Name = "avt2";
-            this.avt2.Size = new System.Drawing.Size(235, 26);
+            this.avt2.Size = new System.Drawing.Size(227, 26);
             this.avt2.Text = "toolStripMenuItem2";
             this.avt2.Click += new System.EventHandler(this.avt2_Click);
+            // 
+            // BgMusic
+            // 
+            this.BgMusic.Enabled = true;
+            this.BgMusic.Location = new System.Drawing.Point(1447, 898);
+            this.BgMusic.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.BgMusic.Name = "BgMusic";
+            this.BgMusic.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("BgMusic.OcxState")));
+            this.BgMusic.Size = new System.Drawing.Size(75, 23);
+            this.BgMusic.TabIndex = 30;
+            this.BgMusic.Visible = false;
+            this.BgMusic.PlayStateChange += new AxWMPLib._WMPOCXEvents_PlayStateChangeEventHandler(this.BgMusic_PlayStateChange);
             // 
             // percent
             // 
@@ -225,7 +236,6 @@ namespace DoubleFours
             this.pctbPlay.TabIndex = 27;
             this.pctbPlay.TabStop = false;
             this.pctbPlay.Visible = false;
-            this.pctbPlay.Click += new System.EventHandler(this.pctbPlay_Click);
             // 
             // pctbSoundOn
             // 
@@ -398,18 +408,6 @@ namespace DoubleFours
             this.pctbFlyColor.Click += new System.EventHandler(this.pctbFlyColor_Click);
             this.pctbFlyColor.MouseHover += new System.EventHandler(this.pctbFlyColor_MouseHover);
             // 
-            // BgMusic
-            // 
-            this.BgMusic.Enabled = true;
-            this.BgMusic.Location = new System.Drawing.Point(1447, 898);
-            this.BgMusic.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.BgMusic.Name = "BgMusic";
-            this.BgMusic.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("BgMusic.OcxState")));
-            this.BgMusic.Size = new System.Drawing.Size(75, 23);
-            this.BgMusic.TabIndex = 30;
-            this.BgMusic.Visible = false;
-            this.BgMusic.PlayStateChange += new AxWMPLib._WMPOCXEvents_PlayStateChangeEventHandler(this.BgMusic_PlayStateChange);
-            // 
             // Pika2Vn
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -433,11 +431,11 @@ namespace DoubleFours
             this.Text = "Pika2Vn";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Form1_FormClosed);
-            this.Load += new System.EventHandler(this.Pika2Vn_Load);
             ((System.ComponentModel.ISupportInitialize)(this.progressBar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctbLifeTime)).EndInit();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.BgMusic)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctbPause)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctbHome)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctbPlay)).EndInit();
@@ -454,7 +452,6 @@ namespace DoubleFours
             ((System.ComponentModel.ISupportInitialize)(this.pctbReset)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctbHelp)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctbFlyColor)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BgMusic)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -465,7 +462,7 @@ namespace DoubleFours
 
         #endregion
         private System.Windows.Forms.Timer Timer;
-        public System.Windows.Forms.Panel pnlChessBoard;
+        private System.Windows.Forms.Panel pnlChessBoard;
         private System.Windows.Forms.PictureBox progressBar;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem menuToolStripMenuItem;

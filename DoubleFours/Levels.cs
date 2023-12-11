@@ -40,7 +40,7 @@ namespace DoubleFours
         private void btnPlay_Click(object sender, EventArgs e)
         {
             this.Close();
-            Program.form1.NewGame(0);
+            Program.form1.NewGame();
             Program.form1.Show();
 
             Program.menu.Hide();
