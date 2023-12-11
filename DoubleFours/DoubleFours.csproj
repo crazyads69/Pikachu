@@ -124,6 +124,7 @@
     <Compile Include="Levels.Designer.cs">
       <DependentUpon>Levels.cs</DependentUpon>
     </Compile>
+    <Compile Include="LoadDatabase.cs" />
     <Compile Include="Pika2Vn.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -142,6 +143,7 @@
     <Compile Include="Option.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SaveData.cs" />
     <EmbeddedResource Include="Levels.resx">
       <DependentUpon>Levels.cs</DependentUpon>
     </EmbeddedResource>
