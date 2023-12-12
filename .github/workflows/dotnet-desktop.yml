@@ -11,14 +11,13 @@ jobs:
     strategy:
       matrix:
         configuration: [Debug, Release]
-        targetplatform: [x86, x64]
+        targetplatform: [win-x86, win-x64]
 
     runs-on: windows-latest
 
     env:
       Solution_Name: DoubleFours.sln
       DotNet_Version: 6.0.x  # Specify the desired .NET Core version here
-      RuntimeIdentifier: win-${{ matrix.targetplatform }}
 
     steps:
       - name: Checkout
@@ -35,7 +34,7 @@ jobs:
         run: dotnet build ${{ env.Solution_Name }} --configuration ${{ matrix.configuration }} --runtime ${{ matrix.targetplatform }}
 
       - name: Publish the application
-        run: dotnet publish ${{ env.Solution_Name }} --configuration ${{ matrix.configuration }} --runtime ${{ matrix.targetplatform }} --output ${{ env.Solution_Name }}/publish --self-contained true --runtime ${{ env.RuntimeIdentifier }}
+        run: dotnet publish ${{ env.Solution_Name }} --configuration ${{ matrix.configuration }} --output ${{ env.Solution_Name }}/publish --self-contained true --runtime ${{ matrix.targetplatform }}
 
       - name: Get Commit Information
         id: commit_info
