@@ -16,6 +16,7 @@ jobs:
 
     env:
       Solution_Name: DoubleFours.sln
+      DotNet_Version: 6.0.x  # Specify the desired .NET Core version here
 
     steps:
       - name: Checkout
@@ -24,15 +25,17 @@ jobs:
           fetch-depth: 0
 
       - name: Install .NET Core
-        uses: actions/setup-dotnet@v3
+        uses: actions/setup-dotnet@v1
         with:
-          dotnet-version: 6.0.x
+          dotnet-version: ${{ env.DotNet_Version }}
 
       - name: Setup MSBuild.exe
         uses: microsoft/setup-msbuild@v1.0.2
 
-      - name: Restore the application
-        run: msbuild $env:Solution_Name /t:Restore /p:Configuration=$env:Configuration
+      - name: Restore the application and install packages
+        run: |
+          msbuild $env:Solution_Name /t:Restore /p:Configuration=$env:Configuration
+          dotnet restore $env:Solution_Name
         env:
           Configuration: ${{ matrix.configuration }}
 
