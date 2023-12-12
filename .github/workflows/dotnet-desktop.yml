@@ -1,0 +1,73 @@
+name: .NET Core Desktop
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    strategy:
+      matrix:
+        configuration: [Debug, Release]
+
+    runs-on: windows-latest
+
+    env:
+      Solution_Name: DoubleFours.sln
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+
+      - name: Install .NET Core
+        uses: actions/setup-dotnet@v3
+        with:
+          dotnet-version: 6.0.x
+
+      - name: Setup MSBuild.exe
+        uses: microsoft/setup-msbuild@v1.0.2
+
+      - name: Restore the application
+        run: msbuild $env:Solution_Name /t:Restore /p:Configuration=$env:Configuration
+        env:
+          Configuration: ${{ matrix.configuration }}
+
+      - name: Build the application
+        run: msbuild $env:Solution_Name /t:Build /p:Configuration=$env:Configuration
+        env:
+          Configuration: ${{ matrix.configuration }}
+
+      - name: Publish the application
+        run: dotnet publish $env:Solution_Name --configuration $env:Configuration --output $env:Solution_Name/publish
+        env:
+          Configuration: ${{ matrix.configuration }}
+
+      - name: Get Commit Information
+        id: commit_info
+        run: echo "::set-output name=hash::$(git rev-parse --short HEAD) ::set-output name=message::$(git log -1 --pretty=format:'%s')"
+
+      - name: Create Release
+        id: create_release
+        uses: actions/create-release@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          tag_name: ${{ steps.commit_info.outputs.hash }}
+          release_name: Release ${{ steps.commit_info.outputs.hash }}
+          body: |
+            Commit Hash: ${{ steps.commit_info.outputs.hash }}
+            Commit Message: ${{ steps.commit_info.outputs.message }}
+
+            Release Notes for ${{ steps.commit_info.outputs.hash }}
+          draft: false
+          prerelease: false
+
+      - name: Upload build artifacts
+        uses: actions/upload-artifact@v3
+        with:
+          name: App Package
+          path: ${{ env.Solution_Name }}/publish/*
