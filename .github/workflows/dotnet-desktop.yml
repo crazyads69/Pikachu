@@ -11,7 +11,6 @@ jobs:
     strategy:
       matrix:
         configuration: [Debug, Release]
-        targetplatform: [win-x86, win-x64]
 
     runs-on: windows-latest
 
@@ -30,11 +29,31 @@ jobs:
         with:
           dotnet-version: ${{ env.DotNet_Version }}
 
+      - name: Setup MSBuild.exe
+        uses: microsoft/setup-msbuild@v1.0.2
+
+      - name: Clean the project
+        run: dotnet clean $env:Solution_Name --configuration $env:Configuration
+        env:
+          Configuration: ${{ matrix.configuration }}
+
+        
+      - name: Restore the application and install packages
+        run: |
+          msbuild $env:Solution_Name /t:Restore /p:Configuration=$env:Configuration
+          dotnet restore $env:Solution_Name
+        env:
+          Configuration: ${{ matrix.configuration }}
+
       - name: Build the application
-        run: dotnet build ${{ env.Solution_Name }} --configuration ${{ matrix.configuration }} --runtime ${{ matrix.targetplatform }}
+        run: msbuild $env:Solution_Name /t:Build /p:Configuration=$env:Configuration
+        env:
+          Configuration: ${{ matrix.configuration }}
 
       - name: Publish the application
-        run: dotnet publish ${{ env.Solution_Name }} --configuration ${{ matrix.configuration }} --output ${{ env.Solution_Name }}/publish --self-contained true --runtime ${{ matrix.targetplatform }}
+        run: dotnet publish $env:Solution_Name --configuration $env:Configuration --output $env:Solution_Name/publish
+        env:
+          Configuration: ${{ matrix.configuration }}
 
       - name: Get Commit Information
         id: commit_info
