@@ -6,6 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static DoubleFours.Pika2Vn;
 
 namespace DoubleFours
 {
@@ -20,17 +21,17 @@ namespace DoubleFours
         #endregion
 
         #region Initialize
-        public ChessBoardManager(Panel pnlChessBoard)
+        public ChessBoardManager(Panel pnlChessBoard, bool firstClick)
         {
             this.pnlChessBoard = pnlChessBoard;
 
-            DrawChessBoard();
+            DrawChessBoard(firstClick);
         }
         #endregion
 
         #region Method
         //tao ban co
-        public void DrawChessBoard()
+        public void DrawChessBoard(bool firstClick)
         {
             pnlChessBoard.Controls.Clear();//xóa bàn cờ để vẽ lại
             matrix = new Chess[Cons.CHESS_BOARD_WIDTH + 2, Cons.CHESS_BOARD_HEIGHT + 2];
@@ -44,6 +45,10 @@ namespace DoubleFours
             };
 
             Random rd = new Random();
+            List<point> curChessboard = new List<point>();
+            LoadDatabase load = new LoadDatabase();
+            curChessboard = load.LoadFromDatabase();
+            bool fClick = firstClick;
             for (int i = 0; i < Cons.CHESS_BOARD_HEIGHT + 2; i++)//update
             {
 
@@ -70,10 +75,32 @@ namespace DoubleFours
 
                     pokemon.Click += Pokemon_Click;
 
-
                     pnlChessBoard.Controls.Add(pokemon);
                     old_pokemon = pokemon;
+
                     matrix[j, i] = pokemon;
+                    bool check = false;
+                    if (!firstClick)
+                    {
+                        for (int id = 0; id < curChessboard.Count(); id++)
+                        {
+                            if (curChessboard[id].x == j && curChessboard[id].y == i)
+                            {
+                                check = true;
+                            }
+                        }
+                        if (!check)
+                        {
+                            pokemon.BackgroundImage = null;
+                        }
+                    }
+                    //if (lost + 1 > 0)
+                    //{
+                    //    if (j == Cons.CHESS_BOARD_WIDTH && i>0)
+                    //        lost += 2;
+                    //    lost--;
+                    //    pokemon.BackgroundImage = null;
+                    //}
                 }
 
                 old_pokemon.Location = new Point(0, old_pokemon.Location.Y + Cons.CHESS_HEIGHT);
@@ -82,7 +109,7 @@ namespace DoubleFours
             }
         }
 
- 
+
         private void Pokemon_Click(object sender, EventArgs e)
         {
             Chess pokemon = (Chess)sender;
@@ -134,8 +161,6 @@ namespace DoubleFours
                     }
 
                 }
-
-
             }
         }
 
