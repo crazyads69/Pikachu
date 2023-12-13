@@ -15,7 +15,7 @@ jobs:
     runs-on: windows-latest
 
     env:
-      Solution_Name: DoubleFours.sln
+      Solution_Name: STNLTTQ.sln
       DotNet_Version: 6.0.x  # Specify the desired .NET Core version here
 
     steps:
