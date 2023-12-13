@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="DoubleFours.Chess">
+    <Position X="8.5" Y="10" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>RABAAAAAAAAAAABAAAAAgCAAAAAAAAAAAAAAgAAAYAA=</HashCode>
+      <FileName>Chess.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DoubleFours.ChessBoardManager">
+    <Position X="0.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAHAACAAAgAAAAAAADoAAAAQQAIAAAAAAAAAAAA=</HashCode>
+      <FileName>ChessBoardManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DoubleFours.CollectionImage">
+    <Position X="4.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAA=</HashCode>
+      <FileName>CollectionImage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DoubleFours.Cons" Collapsed="true">
+    <Position X="8.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAQAAAAAAAAAQAABAAAAAACAIAAAAAAAAAAAAEAAE=</HashCode>
+      <FileName>Cons.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DoubleFours.DFSoundPlayer">
+    <Position X="9.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAQABAAAAAAAAAIAAAAAAIACQAAAAAAAEBAAAAAAAA=</HashCode>
+      <FileName>DFSoundPlayer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DoubleFours.Item">
+    <Position X="2.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAAAAAAAAAIAABAACAAAAAAAAAAAAACIAACAgAAAAA=</HashCode>
+      <FileName>Item.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DoubleFours.LifeTime">
+    <Position X="6" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ASAAAARAAAAIBAAAACAAAAABBAAAAABIAAAAEAAAAQA=</HashCode>
+      <FileName>LifeTime.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DoubleFours.Menu">
+    <Position X="5.25" Y="9" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAEIAAASAAIACAAAAIABAIhAAAAAAgIA=</HashCode>
+      <FileName>Menu.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DoubleFours.Option">
+    <Position X="7.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgACAAAAAAAAIAAAAAAAAAAAAACAAAAABABAIUIEA=</HashCode>
+      <FileName>Option.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DoubleFours.Pika2Vn">
+    <Position X="1.5" Y="9" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AUAAAKAUAigAWApCAgzBAABCBAEEAAFqAADCRgIWAEA=</HashCode>
+      <FileName>Pika2Vn.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DoubleFours.Program">
+    <Position X="8.25" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAgAIAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DoubleFours.Properties.Resources" Collapsed="true">
+    <Position X="2.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>DiAEAAiQIIgJAAAQAEABEAAQmQCIAgAFIgCCBAEiIoA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="System.Windows.Forms.Form" Collapsed="true">
+    <Position X="3.5" Y="7.5" Width="1.5" />
+    <NestedTypes>
+      <Class Name="System.Windows.Forms.Form.ControlCollection" Collapsed="true">
+        <TypeIdentifier />
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier />
+  </Class>
+  <Class Name="System.Windows.Forms.PictureBox" Collapsed="true">
+    <Position X="9.75" Y="8.75" Width="1.5" />
+    <TypeIdentifier />
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="System.Object" Collapsed="true">
+    <Position X="6" Y="0.5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="System.Windows.Forms.ContainerControl" Collapsed="true">
+    <Position X="3.75" Y="6.25" Width="1.5" />
+    <TypeIdentifier />
+    <Lollipop Position="0.2" />
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
