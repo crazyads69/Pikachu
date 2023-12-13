@@ -111,7 +111,7 @@
             this.pctbBatDau.BackColor = System.Drawing.Color.Transparent;
             this.pctbBatDau.Cursor = System.Windows.Forms.Cursors.PanNW;
             this.pctbBatDau.Image = global::DoubleFours.Properties.Resources.batdau;
-            this.pctbBatDau.Location = new System.Drawing.Point(134, 126);
+            this.pctbBatDau.Location = new System.Drawing.Point(134, 129);
             this.pctbBatDau.Name = "pctbBatDau";
             this.pctbBatDau.Size = new System.Drawing.Size(327, 96);
             this.pctbBatDau.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -137,6 +137,7 @@
             this.Name = "Menu";
             this.Text = "Menu";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.Menu_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pctbHDSD)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctbThoat)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctbHuongDan)).EndInit();

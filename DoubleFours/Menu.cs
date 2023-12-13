@@ -60,5 +60,10 @@ namespace DoubleFours
             Program.form1.Show();
             Program.menu.Hide();
         }
+
+        private void Menu_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
