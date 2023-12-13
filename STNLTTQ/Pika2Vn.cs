@@ -24,7 +24,14 @@ namespace DoubleFours
         Item items;
         InfinityStones stone;
         public Option options;
+        public bool firstClick = false;
         private bool endgame = false;
+        public struct point
+        {
+            public int x;
+            public int y;
+        }
+        List<point> curChessboard;
         #endregion
 
 
@@ -33,11 +40,10 @@ namespace DoubleFours
 
             InitializeComponent();
             Timer.Interval = Cons.LIFETIME_INTERVAL;
-
             CollectionImage.PokemonImage = CollectionImage.CreatePokemon(DoubleFours.Properties.Resources.pokemongame,
             Cons.POKE_NUMBER_IMAGE, Cons.POKE_STATUS);
-
-
+            Program.menu.pctbTiepTuc.Enabled = true;
+            curChessboard = new List<point>();
             //NewGame();
 
         }
@@ -48,7 +54,14 @@ namespace DoubleFours
         public void NewGame()
         {
             this.SuspendLayout();
-            chessBoard = new ChessBoardManager(pnlChessBoard);
+            chessBoard = new ChessBoardManager(pnlChessBoard, firstClick);
+            if (!firstClick)
+            {
+                LoadDatabase load = new LoadDatabase();
+                List<point> curChessboard = new List<point>();
+                curChessboard = load.LoadFromDatabase();
+                chessBoard.coupleRemain = curChessboard.Count() / 2;
+            }
             //chessBoard.KhoiTaoStone(ptbstone1, ptbstone2, ptbstone3, ptbstone4, ptbstone5, ptbstone6);
             //chessBoard.resetStone();
             stone = new InfinityStones(ptbstone1, ptbstone2, ptbstone3, ptbstone4, ptbstone5, ptbstone6, chessBoard);
@@ -61,9 +74,7 @@ namespace DoubleFours
             endgame = false;
             Option.pause = false;
             UpdateStatus(endgame, Option.pause);
-
             Timer.Start();
-
             this.ResumeLayout();
         }
 
@@ -74,7 +85,6 @@ namespace DoubleFours
             lifeTime.UpdateLifeTime();
             if (progressBar.Width == 0)
                 LoseGame();
-
             if (chessBoard.coupleRemain == 0)
                 WinGame();
 
@@ -188,7 +198,7 @@ namespace DoubleFours
                         MessageBoxIcon.Warning);
                     return;
                 }
-                else if(lifeTime.FlyColor())
+                else if (lifeTime.FlyColor())
                 {
                     if (Option.LockSound == false) DFSoundPlayer.media_flycolor.Play();
                     items.FlyColor(items.PokeFlyColor(), 0);
@@ -282,11 +292,41 @@ namespace DoubleFours
 
         private void Form1_FormClosed(object sender, FormClosedEventArgs e)
         {
+            SaveData save = new SaveData();
+            point temp = new point();
+            for (int i = 1; i < Cons.CHESS_BOARD_HEIGHT + 1; i++)
+            {
+                for (int j = 1; j < Cons.CHESS_BOARD_WIDTH + 1 + 1; j++)
+                {
+                    if (chessBoard.matrix[j, i].BackgroundImage != null)
+                    {
+                        temp.x = j;
+                        temp.y = i;
+                        curChessboard.Add(temp);
+                    }
+                }
+            }
+            save.Save(curChessboard);
             Program.menu.Close();
         }
         #endregion
 
         private void pnlChessBoard_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void pctbPlay_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Pika2Vn_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pctbLifeTime_Click(object sender, EventArgs e)
         {
 
         }
