@@ -137,6 +137,7 @@
             this.Name = "Menu";
             this.Text = "Menu";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.Menu_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pctbHDSD)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctbThoat)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctbHuongDan)).EndInit();
