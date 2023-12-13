@@ -47,14 +47,14 @@ jobs:
 
       - name: Build the application
         run: |
-          msbuild $env:Solution_Name /t:Build /p:Configuration=$env:Configuration
+          msbuild $env:Solution_Name /t:Build /p:Configuration=$env:Configuration /p:RuntimeIdentifier=win-x86 /p:PlatformTarget=x86
           dotnet build $env:Solution_Name
         env:
           Configuration: ${{ matrix.configuration }}
 
       - name: Publish the application
         run: |
-          dotnet publish $env:Solution_Name --configuration $env:Configuration --output $env:Solution_Name/publish
+          dotnet publish $env:Solution_Name --configuration $env:Configuration --output $env:Solution_Name/publish /p:RuntimeIdentifier=win-x86 /p:PlatformTarget=x86
           dotnet add $env:Solution_Name package WMPLib --package-directory packages
         env:
           Configuration: ${{ matrix.configuration }}
