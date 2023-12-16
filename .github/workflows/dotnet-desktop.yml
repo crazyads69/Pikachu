@@ -15,7 +15,7 @@ jobs:
     runs-on: windows-latest
 
     env:
-      Solution_Name: DoubleFours.sln
+      Solution_Name: STNLTTQ.sln
       DotNet_Version: 6.0.x  # Specify the desired .NET Core version here
 
     steps:
@@ -37,21 +37,25 @@ jobs:
         env:
           Configuration: ${{ matrix.configuration }}
 
-        
       - name: Restore the application and install packages
         run: |
           msbuild $env:Solution_Name /t:Restore /p:Configuration=$env:Configuration
           dotnet restore $env:Solution_Name
+          nuget install WMPLib -Version 1.0.0.0 -OutputDirectory packages
         env:
           Configuration: ${{ matrix.configuration }}
 
       - name: Build the application
-        run: msbuild $env:Solution_Name /t:Build /p:Configuration=$env:Configuration
+        run: |
+          msbuild $env:Solution_Name /t:Build /p:Configuration=$env:Configuration /p:RuntimeIdentifier=win-x86 /p:PlatformTarget=x86
+          dotnet build $env:Solution_Name
         env:
           Configuration: ${{ matrix.configuration }}
 
       - name: Publish the application
-        run: dotnet publish $env:Solution_Name --configuration $env:Configuration --output $env:Solution_Name/publish
+        run: |
+          dotnet publish $env:Solution_Name --configuration $env:Configuration --output $env:Solution_Name/publish /p:RuntimeIdentifier=win-x86 /p:PlatformTarget=x86
+          dotnet add $env:Solution_Name package WMPLib --package-directory packages
         env:
           Configuration: ${{ matrix.configuration }}
 
