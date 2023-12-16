@@ -90,9 +90,9 @@
             this.label1.ForeColor = System.Drawing.Color.Red;
             this.label1.Location = new System.Drawing.Point(12, 77);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(311, 48);
+            this.label1.Size = new System.Drawing.Size(284, 46);
             this.label1.TabIndex = 3;
-            this.label1.Text = "CHỌN GIÁO ÁN";
+            this.label1.Text = "CHỌN MỨC ĐỘ";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // btnPlay

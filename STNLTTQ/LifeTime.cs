@@ -18,7 +18,7 @@ namespace DoubleFours
         PictureBox pctbLifeTime;
         private bool count_sound = false;
 
-        public LifeTime(PictureBox ptbProgressBar, Label lbPercent,PictureBox pctbLifeTime)
+        public LifeTime(PictureBox ptbProgressBar, Label lbPercent, PictureBox pctbLifeTime)
         {
             this.ptbProgressBar = ptbProgressBar;
             this.lbPercent = lbPercent;

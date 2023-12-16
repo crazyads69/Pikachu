@@ -128,7 +128,7 @@ namespace DoubleFours
             this.menuStrip1.Location = new System.Drawing.Point(-223, -26);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.RenderMode = System.Windows.Forms.ToolStripRenderMode.Professional;
-            this.menuStrip1.Size = new System.Drawing.Size(73, 28);
+            this.menuStrip1.Size = new System.Drawing.Size(77, 30);
             this.menuStrip1.TabIndex = 28;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -139,7 +139,7 @@ namespace DoubleFours
             this.chếĐộChơiToolStripMenuItem});
             this.menuToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.menuToolStripMenuItem.Name = "menuToolStripMenuItem";
-            this.menuToolStripMenuItem.Size = new System.Drawing.Size(61, 24);
+            this.menuToolStripMenuItem.Size = new System.Drawing.Size(63, 26);
             this.menuToolStripMenuItem.Text = "Menu";
             // 
             // chếĐộChơiToolStripMenuItem
@@ -148,7 +148,7 @@ namespace DoubleFours
             this.avt1,
             this.avt2});
             this.chếĐộChơiToolStripMenuItem.Name = "chếĐộChơiToolStripMenuItem";
-            this.chếĐộChơiToolStripMenuItem.Size = new System.Drawing.Size(169, 26);
+            this.chếĐộChơiToolStripMenuItem.Size = new System.Drawing.Size(177, 26);
             this.chếĐộChơiToolStripMenuItem.Text = "Chế Độ Chơi";
             // 
             // avt1
@@ -157,7 +157,7 @@ namespace DoubleFours
             this.avt1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.avt1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             this.avt1.Name = "avt1";
-            this.avt1.Size = new System.Drawing.Size(227, 26);
+            this.avt1.Size = new System.Drawing.Size(235, 26);
             this.avt1.Text = "toolStripMenuItem1";
             this.avt1.Click += new System.EventHandler(this.avt1_Click);
             // 
@@ -167,7 +167,7 @@ namespace DoubleFours
             this.avt2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.avt2.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             this.avt2.Name = "avt2";
-            this.avt2.Size = new System.Drawing.Size(227, 26);
+            this.avt2.Size = new System.Drawing.Size(235, 26);
             this.avt2.Text = "toolStripMenuItem2";
             this.avt2.Click += new System.EventHandler(this.avt2_Click);
             // 
@@ -428,7 +428,7 @@ namespace DoubleFours
             this.MaximizeBox = false;
             this.Name = "Pika2Vn";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Pika2Vn";
+            this.Text = "Trúc xanh";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Form1_FormClosed);
             ((System.ComponentModel.ISupportInitialize)(this.progressBar)).EndInit();
