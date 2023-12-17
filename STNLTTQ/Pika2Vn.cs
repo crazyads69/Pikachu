@@ -292,7 +292,26 @@ namespace DoubleFours
 
         private void Form1_FormClosed(object sender, FormClosedEventArgs e)
         {
-            this.Hide();
+            Thread thrd = new Thread(saveGame);
+            thrd.IsBackground = true;
+            thrd.Start();
+
+            DialogResult result = MessageBox.Show("Bạn có chắc muốn lưu không ?", "PikaHelp", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Hand, MessageBoxDefaultButton.Button2, MessageBoxOptions.ServiceNotification);
+
+            switch (result)
+            {
+                case DialogResult.Yes:
+                    this.Hide();
+                    this.EndGame();
+                    Program.menu.Close();
+                    break;
+                default:
+                    break;
+            }
+        }
+
+        private void saveGame()
+        {
             SaveData save = new SaveData();
             point temp = new point();
             for (int i = 1; i < Cons.CHESS_BOARD_HEIGHT + 1; i++)
@@ -308,7 +327,6 @@ namespace DoubleFours
                 }
             }
             save.Save(curChessboard);
-            Program.menu.Close();
         }
         #endregion
 
