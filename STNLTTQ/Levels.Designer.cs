@@ -43,7 +43,7 @@
             this.radEasy.Cursor = System.Windows.Forms.Cursors.PanNW;
             this.radEasy.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radEasy.ForeColor = System.Drawing.Color.Orange;
-            this.radEasy.Location = new System.Drawing.Point(365, 37);
+            this.radEasy.Location = new System.Drawing.Point(163, 97);
             this.radEasy.Name = "radEasy";
             this.radEasy.Size = new System.Drawing.Size(192, 28);
             this.radEasy.TabIndex = 0;
@@ -58,7 +58,7 @@
             this.radNormal.Cursor = System.Windows.Forms.Cursors.PanNW;
             this.radNormal.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radNormal.ForeColor = System.Drawing.Color.Orange;
-            this.radNormal.Location = new System.Drawing.Point(365, 113);
+            this.radNormal.Location = new System.Drawing.Point(163, 144);
             this.radNormal.Name = "radNormal";
             this.radNormal.Size = new System.Drawing.Size(270, 28);
             this.radNormal.TabIndex = 1;
@@ -73,7 +73,7 @@
             this.radHard.Cursor = System.Windows.Forms.Cursors.PanNW;
             this.radHard.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radHard.ForeColor = System.Drawing.Color.Orange;
-            this.radHard.Location = new System.Drawing.Point(365, 189);
+            this.radHard.Location = new System.Drawing.Point(163, 191);
             this.radHard.Name = "radHard";
             this.radHard.Size = new System.Drawing.Size(203, 28);
             this.radHard.TabIndex = 2;
@@ -86,11 +86,11 @@
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Algerian", 25.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 25.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Red;
-            this.label1.Location = new System.Drawing.Point(12, 77);
+            this.label1.Location = new System.Drawing.Point(155, 27);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(284, 46);
+            this.label1.Size = new System.Drawing.Size(323, 48);
             this.label1.TabIndex = 3;
             this.label1.Text = "CHỌN MỨC ĐỘ";
             this.label1.Click += new System.EventHandler(this.label1_Click);
