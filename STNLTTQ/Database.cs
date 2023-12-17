@@ -15,7 +15,7 @@ namespace DoubleFours
         protected MySqlConnection connection;
         public Database()
         {
-            _connectionString = "server=sql12.freesqldatabase.com; user=sql12668859; password=RhTASwr6ex; database=sql12668859; convert zero datetime=True";
+            _connectionString = "server=sql12.freesqldatabase.com; user=sql12670887; password=cdJ4aaWu7S; database=sql12670887; convert zero datetime=True";
             connection = new MySqlConnection(_connectionString);
             try
             {
