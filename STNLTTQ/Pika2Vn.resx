@@ -182,7 +182,7 @@
         XTesb3QPLh88M+QwdP6m681Lt7xuXbu94vbgcOjwnZHokdE77DtTd1PuvriXeW/h/sYH6AdFD6UeVjxS
         fNTws+7PbaOWo6fHXMf6Hwc/vj/OGn/2S8Yv7ycKnpCfVEyqTDZPmU2dmnafvvF05dOJZ+nPFmYKf5X+
         tfa5zvMffnP8rX82YnbiBf/Fp99LXsq/PPRq2aueuYC5R69TXy/MF72Rf3P4LeNt37vwd5MLWe+x7ys/
-        6H7o/ujz8cGn1E+f/gUDmPP8usTo0wAAAAlwSFlzAAALEgAACxIB0t1+/AAAMgFJREFUeF7dnHd0FEfa
+        6H7o/ujz8cGn1E+f/gUDmPP8usTo0wAAAAlwSFlzAAALEQAACxEBf2RfkQAAMgFJREFUeF7dnHd0FEfa
         7sfeu3v3+3a/DffurrPJSoAAkTE5B2UkgUAEkzEYG5MM2N61TTY4ggk2QQSJJJQBkZFEMCBplHMCISGE
         EBgwmPTe56nuHo3EEGzYs+fcP57TMz3T1VW/fuupt6p7xrQ2Ytvz0HO1xP2/Vs99DwVGbH1uS0TQ85sj
         gh+n56xkConYbHILjzc1DjebmoYnmezDk00Oz1AtwhNRZoppXkSEaVvEFhPqquqsiyysedRu2xPL5s6H
@@ -446,7 +446,7 @@
         XTesb3QPLh88M+QwdP6m681Lt7xuXbu94vbgcOjwnZHokdE77DtTd1PuvriXeW/h/sYH6AdFD6UeVjxS
         fNTws+7PbaOWo6fHXMf6Hwc/vj/OGn/2S8Yv7ycKnpCfVEyqTDZPmU2dmnafvvF05dOJZ+nPFmYKf5X+
         tfa5zvMffnP8rX82YnbiBf/Fp99LXsq/PPRq2aueuYC5R69TXy/MF72Rf3P4LeNt37vwd5MLWe+x7ys/
-        6H7o/ujz8cGn1E+f/gUDmPP8usTo0wAAAAlwSFlzAAALEgAACxIB0t1+/AAAJYBJREFUeF7tnHeUVVW6
+        6H7o/ujz8cGn1E+f/gUDmPP8usTo0wAAAAlwSFlzAAALEQAACxEBf2RfkQAAJYBJREFUeF7tnHeUVVW6
         7bHDvZ1u3zHe63Gv3dpGUhWhAEVQUAEFJFQVOYOi2LaxbRMmtLVNKCp6fYoBUVARFIokigiICAhYkVBU
         UUDlHAhVVK7vzt/aexen4GiD/e7t98a4f8yxz9ln77XmnPtb3/rWOqeqlZn9D04RYU/+D8KjVfQDz30v
         ht37VKuoD75uFRGX6NBhybetInVsvyypVfvlyUJwbMaPhV8IZwsDhZuFl4T17ZYlZwr17ZYl2f8d0FZy
@@ -613,7 +613,7 @@
   <data name="pctbHelp.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAIIAAACMCAYAAACwCXGNAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1
-        MAAA6mAAADqYAAAXb5JfxUYAAAAJcEhZcwAACxIAAAsSAdLdfvwAAA6VSURBVHhe7Z17cBXVHcfX8Igd
+        MAAA6mAAADqYAAAXb5JfxUYAAAAJcEhZcwAACxEAAAsRAX9kX5EAAA6VSURBVHhe7Z17cBXVHcfX8Igd
         GKa17ylYQDodO9NxqlCmf9jpjJ0RO4DYdtAWKLVaqAiK1dr6HGbaOloHVKaKPGprWy0tzyogbyKIkohQ
         TJQGURICoT5ASEJ4Jr9+v8nvkuXml5vc3Ef2bM535jOTu3v2nN/5fc/dPbvZ3RvEUbI9KACXgJHgNjAL
         LAJFoBRUgyOgBojCv7mM61iGZbkNt2UdrIt1FmgzXlETzLkYjANPgmJQCxIGZxvWzTbY1nhwsYbhlW8h
@@ -682,7 +682,7 @@
   <data name="pctbFlyColor.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAN8AAAG2CAYAAAD/dVMKAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1
-        MAAA6mAAADqYAAAXb5JfxUYAAAAJcEhZcwAACxMAAAsTAQCanBgAAP+WSURBVHhe7P0FeFXntu8Bo6Wl
+        MAAA6mAAADqYAAAXb5JfxUYAAAAJcEhZcwAACxIAAAsSAdLdfvwAAP+WSURBVHhe7P0FeFXntu8Bo6Wl
         Qrvr7O56T5Vixa1AobhT3N3dAiEQHAJJkARChLi7u7t7iLstn7Kmz/GNudg9p6eXe/Y93/n2vr3f3s/T
         /5OSrLUyM+f4jfEf73zfd/YBgD4Uyf4hRRiMJpEEY5LyPZri/l2/f/3v9dvX/g/V9zfqh+qviDEKAxSx
         jDgQ9cJfpfz/QI6VBuBrFCmvVd6j6Lef87zfo+jXn/c3UJqBrEANBmBfl1jifX1H0xf6lvrRhvrqWZ2F
