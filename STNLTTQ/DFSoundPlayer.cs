@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using System.Media;
 using AxWMPLib;
 
-namespace DoubleFours
+namespace STNLTTQ
 {
     class DFSoundPlayer
     {

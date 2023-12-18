@@ -5,7 +5,7 @@ using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace DoubleFours
+namespace STNLTTQ
 {
     static class Program
     {

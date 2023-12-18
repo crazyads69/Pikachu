@@ -6,7 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace DoubleFours
+namespace STNLTTQ
 {
     //Quan li 1 o pokemon,dạng picturebox nhung co toa do,ID_Action
     public class Chess:PictureBox

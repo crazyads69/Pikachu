@@ -71,9 +71,6 @@ D:\Workspace\UIT\IT008\Pikachu\STNLTTQ\obj\Debug\STNLTTQ.csproj.SuggestedBinding
 D:\Workspace\UIT\IT008\Pikachu\STNLTTQ\obj\Debug\Interop.WMPLib.dll
 D:\Workspace\UIT\IT008\Pikachu\STNLTTQ\obj\Debug\AxInterop.WMPLib.dll
 D:\Workspace\UIT\IT008\Pikachu\STNLTTQ\obj\Debug\STNLTTQ.csproj.ResolveComReference.cache
-D:\Workspace\UIT\IT008\Pikachu\STNLTTQ\obj\Debug\DoubleFours.Levels.resources
-D:\Workspace\UIT\IT008\Pikachu\STNLTTQ\obj\Debug\DoubleFours.Pika2Vn.resources
-D:\Workspace\UIT\IT008\Pikachu\STNLTTQ\obj\Debug\DoubleFours.Menu.resources
 D:\Workspace\UIT\IT008\Pikachu\STNLTTQ\obj\Debug\DoubleFours.Properties.Resources.resources
 D:\Workspace\UIT\IT008\Pikachu\STNLTTQ\obj\Debug\STNLTTQ.csproj.GenerateResource.cache
 D:\Workspace\UIT\IT008\Pikachu\STNLTTQ\obj\Debug\DoubleFours.exe.licenses
@@ -166,3 +163,6 @@ D:\Workspace\UIT\IT008\Pikachuu\STNLTTQ\obj\Debug\DoubleFours.exe
 D:\Workspace\UIT\IT008\Pikachuu\STNLTTQ\obj\Debug\DoubleFours.pdb
 D:\Workspace\UIT\IT008\Pikachu\STNLTTQ\bin\Debug\Newtonsoft.Json.dll
 D:\Workspace\UIT\IT008\Pikachu\STNLTTQ\bin\Debug\Newtonsoft.Json.xml
+D:\Workspace\UIT\IT008\Pikachu\STNLTTQ\obj\Debug\STNLTTQ.Levels.resources
+D:\Workspace\UIT\IT008\Pikachu\STNLTTQ\obj\Debug\STNLTTQ.Pika2Vn.resources
+D:\Workspace\UIT\IT008\Pikachu\STNLTTQ\obj\Debug\STNLTTQ.Menu.resources

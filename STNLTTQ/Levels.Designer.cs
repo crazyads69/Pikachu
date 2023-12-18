@@ -1,4 +1,4 @@
-﻿namespace DoubleFours
+﻿namespace STNLTTQ
 {
     partial class Levels
     {
@@ -98,7 +98,7 @@
             // btnPlay
             // 
             this.btnPlay.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPlay.Location = new System.Drawing.Point(260, 239);
+            this.btnPlay.Location = new System.Drawing.Point(243, 239);
             this.btnPlay.Name = "btnPlay";
             this.btnPlay.Size = new System.Drawing.Size(123, 39);
             this.btnPlay.TabIndex = 4;

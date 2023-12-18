@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DoubleFours
+namespace STNLTTQ
 {
     //luu tru cac bien hang
     public class Cons

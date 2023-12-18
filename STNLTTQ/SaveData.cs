@@ -9,9 +9,9 @@ using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Forms;
 using Newtonsoft.Json;
-using static DoubleFours.Pika2Vn;
+using static STNLTTQ.Pika2Vn;
 
-namespace DoubleFours
+namespace STNLTTQ
 {
     public class SaveData : Database
     {

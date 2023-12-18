@@ -7,10 +7,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Newtonsoft.Json;
-using static DoubleFours.Pika2Vn;
+using static STNLTTQ.Pika2Vn;
 using System.Windows.Forms;
 
-namespace DoubleFours
+namespace STNLTTQ
 {
     public class LoadDatabase : Database
     {

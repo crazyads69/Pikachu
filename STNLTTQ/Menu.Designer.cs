@@ -1,4 +1,4 @@
-﻿namespace DoubleFours
+﻿namespace STNLTTQ
 {
     partial class Menu
     {
@@ -90,7 +90,7 @@
             this.DoubleBuffered = true;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Menu";
-            this.Text = "Menu";
+            this.Text = "Trúc xanh";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Menu_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pctbThoat)).EndInit();

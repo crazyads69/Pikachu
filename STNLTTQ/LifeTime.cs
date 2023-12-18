@@ -6,7 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace DoubleFours
+namespace STNLTTQ
 {
     public class LifeTime
     {
@@ -48,17 +48,6 @@ namespace DoubleFours
             }
             else return false;
 
-        }
-
-        public bool FlyColor()
-        {
-            if (ptbProgressBar.Width > maxWidth * 0.04)//update
-            {
-                ptbProgressBar.Width -= ptbProgressBar.Width / 2;
-                LifeTimePaint();
-                return true;
-            }
-            else return false;
         }
 
         public void Help()

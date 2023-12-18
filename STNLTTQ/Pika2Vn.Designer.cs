@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace DoubleFours
+namespace STNLTTQ
 {
     partial class Pika2Vn
     {
@@ -343,7 +343,7 @@ namespace DoubleFours
             this.MaximizeBox = false;
             this.Name = "Pika2Vn";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Pika2Vn";
+            this.Text = "Trúc xanh";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Form1_FormClosed);
             this.Load += new System.EventHandler(this.Pika2Vn_Load);

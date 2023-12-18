@@ -14,7 +14,7 @@ using System.Threading;
 using AxWMPLib;
 using System.Drawing.Printing;
 
-namespace DoubleFours
+namespace STNLTTQ
 {
     public partial class Pika2Vn : Form
     {

@@ -1,4 +1,5 @@
-﻿using Org.BouncyCastle.Utilities.Collections;
+﻿using STNLTTQ;
+using Org.BouncyCastle.Utilities.Collections;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -7,9 +8,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using static DoubleFours.Pika2Vn;
+using static STNLTTQ.Pika2Vn;
 
-namespace DoubleFours
+namespace STNLTTQ
 {
     public class ChessBoardManager
     {

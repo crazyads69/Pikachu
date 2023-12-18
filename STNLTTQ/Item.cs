@@ -6,7 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace DoubleFours
+namespace STNLTTQ
 {
     public class Item
     {
@@ -88,23 +88,6 @@ namespace DoubleFours
                 MessageBox.Show("Couple not found !! Please roll !");
             }
 
-        }
-
-        public int PokeFlyColor()
-        {
-            int num = 0;
-            for (int i = 1; i < Cons.CHESS_BOARD_HEIGHT + 1; i++)
-            {
-                for (int j = 1; j < Cons.CHESS_BOARD_WIDTH + 1; j++)
-                {
-                    if (chessBoard.matrix[j, i].BackgroundImage != null)
-                    {
-                        num++;
-                    }
-                }
-            }
-            num = num / 2;
-            return num;
         }
     }
 }
