@@ -106,36 +106,5 @@ namespace DoubleFours
             num = num / 2;
             return num;
         }
-
-        private bool FlyColor(int PokeFlyColor, int x, Random rd)
-        {
-            if (PokeFlyColor != x)
-            {
-                int i;
-
-
-                int j;
-                i = rd.Next(1, Cons.CHESS_BOARD_HEIGHT + 1);//update
-                j = rd.Next(1, Cons.CHESS_BOARD_WIDTH + 1);
-                if (chessBoard.matrix[j, i].BackgroundImage != null)
-                {
-                    chessBoard.matrix[j, i].BackgroundImage = null;
-                    x++;
-                    return FlyColor(PokeFlyColor, x, rd);
-
-                }
-                else return FlyColor(PokeFlyColor, x, rd);
-            }
-            else return true;
-
-        }
-
-
-        public void FlyColor(int PokeFlyColor, int x)
-        {
-
-            Random rd = new Random();
-            FlyColor(PokeFlyColor, x, rd);
-        }
     }
 }
