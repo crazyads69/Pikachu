@@ -23,7 +23,6 @@ namespace DoubleFours
         ChessBoardManager chessBoard;
         LifeTime lifeTime;
         Item items;
-        InfinityStones stone;
         public Option options;
         public bool firstClick = false;
         private bool endgame = false;

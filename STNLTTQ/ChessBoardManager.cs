@@ -18,7 +18,6 @@ namespace DoubleFours
         public Chess[,] matrix;
         public int coupleRemain = Cons.CHESS_BOARD_HEIGHT * Cons.CHESS_BOARD_WIDTH / 2;
         Queue chosePokemons = new Queue();
-        public InfinityStones infinityStone { get; set; }
         #endregion
 
         #region Initialize

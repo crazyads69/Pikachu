@@ -121,7 +121,6 @@
     <Compile Include="Cons.cs" />
     <Compile Include="Database.cs" />
     <Compile Include="DFSoundPlayer.cs" />
-    <Compile Include="InfinityStones.cs" />
     <Compile Include="Levels.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -143,7 +142,6 @@
     <Compile Include="Menu.Designer.cs">
       <DependentUpon>Menu.cs</DependentUpon>
     </Compile>
-    <Compile Include="note.cs" />
     <Compile Include="Option.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
