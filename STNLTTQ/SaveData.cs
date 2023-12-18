@@ -8,7 +8,9 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Forms;
+using Newtonsoft.Json;
 using static DoubleFours.Pika2Vn;
+using DevExpress.XtraPrinting.Native.WebClientUIControl;
 
 namespace DoubleFours
 {
@@ -20,22 +22,30 @@ namespace DoubleFours
                 connection.Open();
             MySqlCommand command = new MySqlCommand();
             command.Connection = connection;
-            for (int id = 1; id <= curChessboard.Count(); id++)
+            // user_name cần đổi
+            string user_name = Program.user_name;
+            string json = JsonConvert.SerializeObject(curChessboard);
+            command.CommandText = "SELECT USER_NAME FROM LASTEST_STATE";
+            MySqlDataReader reader = command.ExecuteReader();
+            bool check = false;
+            while (reader.Read())
             {
-                command.Parameters.Clear();
-                command.CommandText += "UPDATE CURRENT SET X = @x, Y = @y WHERE ID = @id;";
-                command.Parameters.AddWithValue("@id", id);
-                command.Parameters.AddWithValue("@x", curChessboard[id - 1].x);
-                command.Parameters.AddWithValue("@y", curChessboard[id - 1].y);
+                if (reader["USER_NAME"].ToString() == user_name) check = true;
+            }
+            reader.Close();
+            command = new MySqlCommand();
+            command.Parameters.AddWithValue("@state", json);
+            command.Parameters.AddWithValue("@user_name", user_name);
+            command.Connection = connection;
+            if (!check)
+            {
+                command.CommandText = "INSERT INTO LASTEST_STATE VALUES (NULL,@user_name, @state);\n";
+                command.CommandText += "INSERT INTO USER VALUES (NULL, @user_name);";
                 command.ExecuteNonQuery();
             }
-            for (int id = curChessboard.Count() + 1; id <= 128; id++)
+            else
             {
-                command.Parameters.Clear();
-                command.CommandText += "UPDATE CURRENT SET X = @x, Y = @y WHERE ID = @id;";
-                command.Parameters.AddWithValue("@id", id);
-                command.Parameters.AddWithValue("@x", 0);
-                command.Parameters.AddWithValue("@y", 0);
+                command.CommandText = "UPDATE LASTEST_STATE SET STATE = @state WHERE USER_NAME = @user_name";
                 command.ExecuteNonQuery();
             }
             connection.Close();
