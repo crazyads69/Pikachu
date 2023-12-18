@@ -13,6 +13,8 @@ using System.Media;
 using System.Threading;
 using AxWMPLib;
 using System.Drawing.Printing;
+using Org.BouncyCastle.Utilities.Collections;
+using STNLTTQ;
 
 namespace STNLTTQ
 {
@@ -136,7 +138,19 @@ namespace STNLTTQ
         {
             DFSoundPlayer.media_win.Play();
             EndGame();
-            MessageBox.Show("YOU WIN!");
+            LoadDatabase load = new LoadDatabase();
+            List<int> listScore = new List<int>();
+            listScore = load.loadListScore();
+            for (int i = listScore.Count - 1; i >= 0; i--)
+            {
+                if (int.Parse(score.Text) >= listScore[i])
+                {
+                    int top = listScore.Count() - i;
+                    MessageBox.Show($"Bạn đã đứng top {top}");
+                    break;
+                }
+            }
+            //MessageBox.Show("YOU WIN!");
 
 
         }

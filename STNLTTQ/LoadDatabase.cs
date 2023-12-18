@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using Newtonsoft.Json;
 using static STNLTTQ.Pika2Vn;
 using System.Windows.Forms;
+using STNLTTQ;
 
 namespace STNLTTQ
 {
@@ -91,6 +92,24 @@ namespace STNLTTQ
             }
             connection.Close();
             return rank;
+        }
+
+        public List<int> loadListScore()
+        {
+            List<int> listScore = new List<int>();
+            if (connection.State.ToString() == "Closed")
+                connection.Open();
+            MySqlCommand command = new MySqlCommand();
+            command.Connection = connection;
+            command.CommandText = "SELECT SCORE FROM USER_RANK";
+            MySqlDataReader reader = command.ExecuteReader();
+            while (reader.Read())
+            {
+                listScore.Add(int.Parse(reader["SCORE"].ToString()));
+            }
+            listScore.Sort();
+            connection.Close();
+            return listScore;
         }
     }
 }
