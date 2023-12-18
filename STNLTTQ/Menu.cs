@@ -21,7 +21,6 @@ namespace DoubleFours
         public Menu()
         {
             InitializeComponent();
-
         }
 
 
@@ -31,6 +30,7 @@ namespace DoubleFours
             Levels level = new Levels();
             level.Show();
             pctbBatDau.Enabled = false;
+            pctbHuongDan.Enabled = false;
             pctbTiepTuc.Enabled = false;
             pctbThoat.Enabled = false;
             //SaveData save = new SaveData();
@@ -40,6 +40,22 @@ namespace DoubleFours
         private void pctbThoat_Click(object sender, EventArgs e)
         {
             Close();
+        }
+
+        private void pctbHuongDan_Click(object sender, EventArgs e)
+        {
+            pctbHDSD.BackgroundImage = Image.FromFile
+("..\\..\\Resources\\huongDanSuDung.jpg");
+            pctbHDSD.Visible = true;
+            btnBack.Visible = true;
+            btnBack.Enabled = true;
+        }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            pctbHDSD.Visible = false;
+            btnBack.Visible = false;
+            btnBack.Enabled = false;
         }
 
         private void pctbTiepTuc_Click(object sender, EventArgs e)
@@ -53,10 +69,22 @@ namespace DoubleFours
             }
             else
             {
-                Program.form1.NewGame();
-                Program.form1.Show();
-                Program.menu.Hide();
-                Program.form1.firstClick = true;
+                if (Program.form1.score.Text == "0")
+                {
+                    MessageBox.Show("Bạn không có dữ liệu nào! Hãy bấm bắt đầu trước khi bấm tiếp tục.");
+                }
+                else
+                {
+                    LoadDatabase load = new LoadDatabase();
+                    string rank_diff = load.loadRank();
+                    if (rank_diff == "EASY") Cons.POKE_NUMBER = 20;
+                    if (rank_diff == "NORMAL") Cons.POKE_NUMBER = 25;
+                    if (rank_diff == "HARD") Cons.POKE_NUMBER = 30;
+                    Program.form1.NewGame();
+                    Program.form1.Show();
+                    Program.menu.Hide();
+                    Program.form1.firstClick = true;
+                }
             }
         }
 

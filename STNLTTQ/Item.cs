@@ -12,13 +12,11 @@ namespace DoubleFours
     {
         private PictureBox pctbHelp;
         private PictureBox pctbReset;
-        private PictureBox pctbFlyColor;
         private ChessBoardManager chessBoard;
-        public Item(PictureBox pctbHelp,PictureBox pctbReset,PictureBox pctbFlyColor,ChessBoardManager chessBoard)
+        public Item(PictureBox pctbHelp, PictureBox pctbReset, ChessBoardManager chessBoard)
         {
             this.pctbHelp = pctbHelp;
             this.pctbReset = pctbReset;
-            this.pctbFlyColor = pctbFlyColor;
             this.chessBoard = chessBoard;
         }
 

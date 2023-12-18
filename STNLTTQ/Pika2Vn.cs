@@ -12,6 +12,7 @@ using WMPLib;
 using System.Media;
 using System.Threading;
 using AxWMPLib;
+using System.Drawing.Printing;
 
 namespace DoubleFours
 {
@@ -44,6 +45,8 @@ namespace DoubleFours
             Cons.POKE_NUMBER_IMAGE, Cons.POKE_STATUS);
             Program.menu.pctbTiepTuc.Enabled = true;
             curChessboard = new List<point>();
+            LoadDatabase load = new LoadDatabase();
+            score.Text = load.loadScore();
             //NewGame();
 
         }
@@ -64,13 +67,10 @@ namespace DoubleFours
             }
             //chessBoard.KhoiTaoStone(ptbstone1, ptbstone2, ptbstone3, ptbstone4, ptbstone5, ptbstone6);
             //chessBoard.resetStone();
-            stone = new InfinityStones(ptbstone1, ptbstone2, ptbstone3, ptbstone4, ptbstone5, ptbstone6, chessBoard);
-            chessBoard.infinityStone = stone;
-            items = new Item(pctbHelp, pctbReset, pctbFlyColor, chessBoard);
             options = new Option(pctbHome, pctbPlay, pctbPause, pctbSoundOff, pctbSoundOn, BgMusic, Timer);
 
             lifeTime = new LifeTime(progressBar, percent, pctbLifeTime);
-
+            items = new Item(pctbHelp, pctbReset, chessBoard);
             endgame = false;
             Option.pause = false;
             UpdateStatus(endgame, Option.pause);
@@ -87,7 +87,6 @@ namespace DoubleFours
                 LoseGame();
             if (chessBoard.coupleRemain == 0)
                 WinGame();
-
         }
 
         public void UpdateStatus(bool endgame, bool pause)
@@ -95,7 +94,6 @@ namespace DoubleFours
             if (endgame == false && pause == false)
             {
                 pnlChessBoard.Enabled = true;
-                pctbFlyColor.Enabled = true;
                 pctbHelp.Enabled = true;
                 pctbHome.Enabled = true;
                 pctbReset.Enabled = true;
@@ -107,7 +105,6 @@ namespace DoubleFours
             else if (endgame == false && pause == true)
             {
                 pnlChessBoard.Enabled = false;
-                pctbFlyColor.Enabled = false;
                 pctbHelp.Enabled = false;
                 pctbReset.Enabled = false;
                 Option.LockSound = false;
@@ -116,7 +113,6 @@ namespace DoubleFours
             else//endgame=true
             {
                 pnlChessBoard.Enabled = false;
-                pctbFlyColor.Enabled = false;
                 pctbHelp.Enabled = false;
                 pctbReset.Enabled = false;
                 pctbPause.Enabled = false;
@@ -174,38 +170,6 @@ namespace DoubleFours
             if (lifeTime.Reset())
                 items.ResetChessBoard();
             this.ResumeLayout();
-        }
-
-        private void pctbFlyColor_Click(object sender, EventArgs e)
-        {
-            if (stone.canSnap() == false)
-            {
-                MessageBox.Show(
-                    "Bạn chưa tìm đủ 6 viên đá để thực hiện BÚNG TAY",
-                    "Đọc kĩ hướng dẫn sử dụng trước khi dùng",
-                    MessageBoxButtons.OK,
-                    MessageBoxIcon.Warning);
-                return;
-            }
-            else
-            {
-                if (chessBoard.coupleRemain % 2 != 0)
-                {
-                    MessageBox.Show(
-                        "Số cặp pokemon đang LẺ!\nPhải ăn thêm 1 cặp mới được thực hiện cú BÚNG TAY",
-                        "Đọc kĩ hướng dẫn sử dụng trước khi dùng",
-                        MessageBoxButtons.OK,
-                        MessageBoxIcon.Warning);
-                    return;
-                }
-                else if (lifeTime.FlyColor())
-                {
-                    if (Option.LockSound == false) DFSoundPlayer.media_flycolor.Play();
-                    items.FlyColor(items.PokeFlyColor(), 0);
-                    stone.resetStone();
-                    chessBoard.coupleRemain = chessBoard.coupleRemain / 2;//update
-                }
-            }
         }
 
         private void pctbHelp_Click(object sender, EventArgs e)
@@ -282,36 +246,10 @@ namespace DoubleFours
             ttHelp.SetToolTip(pctbHelp, "Tìm Gợi Ý");
         }
 
-        private void pctbFlyColor_MouseHover(object sender, EventArgs e)
-        {
-            ToolTip ttFlyColor = new ToolTip();
-            ttFlyColor.IsBalloon = true;
-            ttFlyColor.SetToolTip
-                (pctbFlyColor, "----Thực Hiện Cú Búng Tay----\nChú ý: Chỉ được sử dụng khi số cặp pokemon là lẻ");
-        }
-
         private void Form1_FormClosed(object sender, FormClosedEventArgs e)
         {
-            Thread thrd = new Thread(saveGame);
-            thrd.IsBackground = true;
-            thrd.Start();
-
-            DialogResult result = MessageBox.Show("Bạn có chắc muốn lưu không ?", "PikaHelp", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Hand, MessageBoxDefaultButton.Button2, MessageBoxOptions.ServiceNotification);
-
-            switch (result)
-            {
-                case DialogResult.Yes:
-                    this.Hide();
-                    this.EndGame();
-                    Program.menu.Close();
-                    break;
-                default:
-                    break;
-            }
-        }
-
-        private void saveGame()
-        {
+            this.Hide();
+            EndGame();
             SaveData save = new SaveData();
             point temp = new point();
             for (int i = 1; i < Cons.CHESS_BOARD_HEIGHT + 1; i++)
@@ -327,6 +265,7 @@ namespace DoubleFours
                 }
             }
             save.Save(curChessboard);
+            Program.menu.Close();
         }
         #endregion
 
@@ -346,6 +285,16 @@ namespace DoubleFours
         }
 
         private void pctbLifeTime_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void score_Click(object sender, EventArgs e)
         {
 
         }

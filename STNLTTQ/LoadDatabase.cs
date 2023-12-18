@@ -9,7 +9,6 @@ using System.Threading.Tasks;
 using Newtonsoft.Json;
 using static DoubleFours.Pika2Vn;
 using System.Windows.Forms;
-using DevExpress.XtraPrinting.Native.WebClientUIControl;
 
 namespace DoubleFours
 {
@@ -50,6 +49,48 @@ namespace DoubleFours
             }
             connection.Close();
             return curChessboard;
+        }
+
+        public string loadScore()
+        {
+            string score = "0";
+            if (connection.State.ToString() == "Closed")
+                connection.Open();
+            MySqlCommand command = new MySqlCommand();
+            command.Connection = connection;
+            string user_name = Program.user_name;
+            command.CommandText = "SELECT USER_NAME, SCORE FROM USER_RANK";
+            MySqlDataReader reader = command.ExecuteReader();
+            while (reader.Read())
+            {
+                if (reader["USER_NAME"].ToString() == user_name)
+                {
+                    score = reader["SCORE"].ToString();
+                }
+            }
+            connection.Close();
+            return score;
+        }
+
+        public string loadRank()
+        {
+            string rank = "EASY";
+            if (connection.State.ToString() == "Closed")
+                connection.Open();
+            MySqlCommand command = new MySqlCommand();
+            command.Connection = connection;
+            string user_name = Program.user_name;
+            command.CommandText = "SELECT USER_NAME, RANK_DIFF FROM USER_RANK";
+            MySqlDataReader reader = command.ExecuteReader();
+            while (reader.Read())
+            {
+                if (reader["USER_NAME"].ToString() == user_name)
+                {
+                    rank = reader["RANK_DIFF"].ToString();
+                }
+            }
+            connection.Close();
+            return rank;
         }
     }
 }

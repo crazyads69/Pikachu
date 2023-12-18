@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Org.BouncyCastle.Utilities.Collections;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Drawing;
@@ -94,13 +95,6 @@ namespace DoubleFours
                             pokemon.BackgroundImage = null;
                         }
                     }
-                    //if (lost + 1 > 0)
-                    //{
-                    //    if (j == Cons.CHESS_BOARD_WIDTH && i>0)
-                    //        lost += 2;
-                    //    lost--;
-                    //    pokemon.BackgroundImage = null;
-                    //}
                 }
 
                 old_pokemon.Location = new Point(0, old_pokemon.Location.Y + Cons.CHESS_HEIGHT);
@@ -148,9 +142,15 @@ namespace DoubleFours
                         pokemon1.BackgroundImage = null;
                         pokemon2.BackgroundImage = null;
                         DFSoundPlayer.media_pikachu.Play();
-                        infinityStone.CheckStone(pokemon1);
-                        infinityStone.CheckStone(pokemon2);
                         coupleRemain -= 1;
+                        int int_score = 64 - this.coupleRemain;
+                        if (Cons.POKE_NUMBER == 20)
+                            int_score *= 50;
+                        if (Cons.POKE_NUMBER == 25)
+                            int_score *= 100;
+                        if (Cons.POKE_NUMBER == 30)
+                            int_score *= 150;
+                        Program.form1.score.Text = int_score.ToString();
 
                     }
                     else

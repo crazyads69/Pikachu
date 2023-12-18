@@ -41,44 +41,30 @@ namespace DoubleFours
             this.chếĐộChơiToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.avt1 = new System.Windows.Forms.ToolStripMenuItem();
             this.avt2 = new System.Windows.Forms.ToolStripMenuItem();
-            this.BgMusic = new AxWMPLib.AxWindowsMediaPlayer();
             this.percent = new System.Windows.Forms.Label();
             this.pctbPause = new System.Windows.Forms.PictureBox();
             this.pctbHome = new System.Windows.Forms.PictureBox();
             this.pctbPlay = new System.Windows.Forms.PictureBox();
             this.pctbSoundOn = new System.Windows.Forms.PictureBox();
             this.pctbSoundOff = new System.Windows.Forms.PictureBox();
-            this.ptbstone1 = new System.Windows.Forms.PictureBox();
-            this.ptbstone6 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.ptbstone5 = new System.Windows.Forms.PictureBox();
-            this.ptbstone4 = new System.Windows.Forms.PictureBox();
-            this.ptbstone3 = new System.Windows.Forms.PictureBox();
-            this.ptbstone2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.score = new System.Windows.Forms.Label();
+            this.score_title = new System.Windows.Forms.Label();
             this.pctbReset = new System.Windows.Forms.PictureBox();
             this.pctbHelp = new System.Windows.Forms.PictureBox();
-            this.pctbFlyColor = new System.Windows.Forms.PictureBox();
+            this.BgMusic = new AxWMPLib.AxWindowsMediaPlayer();
             ((System.ComponentModel.ISupportInitialize)(this.progressBar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctbLifeTime)).BeginInit();
             this.menuStrip1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.BgMusic)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctbPause)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctbHome)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctbPlay)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctbSoundOn)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctbSoundOff)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ptbstone1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ptbstone6)).BeginInit();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ptbstone5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ptbstone4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ptbstone3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ptbstone2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctbReset)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctbHelp)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pctbFlyColor)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BgMusic)).BeginInit();
             this.SuspendLayout();
             // 
             // Timer
@@ -116,6 +102,7 @@ namespace DoubleFours
             this.pctbLifeTime.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pctbLifeTime.TabIndex = 24;
             this.pctbLifeTime.TabStop = false;
+            this.pctbLifeTime.Click += new System.EventHandler(this.pctbLifeTime_Click);
             // 
             // menuStrip1
             // 
@@ -171,18 +158,6 @@ namespace DoubleFours
             this.avt2.Text = "toolStripMenuItem2";
             this.avt2.Click += new System.EventHandler(this.avt2_Click);
             // 
-            // BgMusic
-            // 
-            this.BgMusic.Enabled = true;
-            this.BgMusic.Location = new System.Drawing.Point(1447, 898);
-            this.BgMusic.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.BgMusic.Name = "BgMusic";
-            this.BgMusic.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("BgMusic.OcxState")));
-            this.BgMusic.Size = new System.Drawing.Size(75, 23);
-            this.BgMusic.TabIndex = 30;
-            this.BgMusic.Visible = false;
-            this.BgMusic.PlayStateChange += new AxWMPLib._WMPOCXEvents_PlayStateChangeEventHandler(this.BgMusic_PlayStateChange);
-            // 
             // percent
             // 
             this.percent.AutoSize = true;
@@ -213,7 +188,7 @@ namespace DoubleFours
             this.pctbHome.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pctbHome.BackColor = System.Drawing.Color.Transparent;
             this.pctbHome.Cursor = System.Windows.Forms.Cursors.PanNW;
-            this.pctbHome.Image = ((System.Drawing.Image)(resources.GetObject("pctbHome.Image")));
+            this.pctbHome.Image = global::DoubleFours.Properties.Resources.home;
             this.pctbHome.Location = new System.Drawing.Point(164, 4);
             this.pctbHome.Name = "pctbHome";
             this.pctbHome.Size = new System.Drawing.Size(81, 77);
@@ -236,13 +211,14 @@ namespace DoubleFours
             this.pctbPlay.TabIndex = 27;
             this.pctbPlay.TabStop = false;
             this.pctbPlay.Visible = false;
+            this.pctbPlay.Click += new System.EventHandler(this.pctbPlay_Click);
             // 
             // pctbSoundOn
             // 
             this.pctbSoundOn.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pctbSoundOn.BackColor = System.Drawing.Color.Transparent;
             this.pctbSoundOn.Cursor = System.Windows.Forms.Cursors.PanNW;
-            this.pctbSoundOn.Image = ((System.Drawing.Image)(resources.GetObject("pctbSoundOn.Image")));
+            this.pctbSoundOn.Image = global::DoubleFours.Properties.Resources.sound_on;
             this.pctbSoundOn.Location = new System.Drawing.Point(0, 3);
             this.pctbSoundOn.Name = "pctbSoundOn";
             this.pctbSoundOn.Size = new System.Drawing.Size(81, 77);
@@ -256,7 +232,7 @@ namespace DoubleFours
             this.pctbSoundOff.BackColor = System.Drawing.Color.Transparent;
             this.pctbSoundOff.Enabled = false;
             this.pctbSoundOff.Image = global::DoubleFours.Properties.Resources.sound_off;
-            this.pctbSoundOff.Location = new System.Drawing.Point(0, 5);
+            this.pctbSoundOff.Location = new System.Drawing.Point(0, 3);
             this.pctbSoundOff.Name = "pctbSoundOff";
             this.pctbSoundOff.Size = new System.Drawing.Size(81, 76);
             this.pctbSoundOff.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -264,106 +240,49 @@ namespace DoubleFours
             this.pctbSoundOff.TabStop = false;
             this.pctbSoundOff.Visible = false;
             // 
-            // ptbstone1
-            // 
-            this.ptbstone1.Image = global::DoubleFours.Properties.Resources.stone1;
-            this.ptbstone1.Location = new System.Drawing.Point(5, 709);
-            this.ptbstone1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.ptbstone1.Name = "ptbstone1";
-            this.ptbstone1.Size = new System.Drawing.Size(36, 36);
-            this.ptbstone1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.ptbstone1.TabIndex = 33;
-            this.ptbstone1.TabStop = false;
-            // 
-            // ptbstone6
-            // 
-            this.ptbstone6.Image = global::DoubleFours.Properties.Resources.stone6;
-            this.ptbstone6.Location = new System.Drawing.Point(192, 709);
-            this.ptbstone6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.ptbstone6.Name = "ptbstone6";
-            this.ptbstone6.Size = new System.Drawing.Size(36, 36);
-            this.ptbstone6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.ptbstone6.TabIndex = 38;
-            this.ptbstone6.TabStop = false;
-            // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Transparent;
-            this.panel1.Controls.Add(this.ptbstone6);
-            this.panel1.Controls.Add(this.ptbstone5);
-            this.panel1.Controls.Add(this.ptbstone4);
-            this.panel1.Controls.Add(this.ptbstone3);
-            this.panel1.Controls.Add(this.ptbstone2);
-            this.panel1.Controls.Add(this.ptbstone1);
-            this.panel1.Controls.Add(this.pictureBox1);
+            this.panel1.Controls.Add(this.score);
+            this.panel1.Controls.Add(this.score_title);
             this.panel1.Controls.Add(this.pctbReset);
             this.panel1.Controls.Add(this.pctbSoundOff);
             this.panel1.Controls.Add(this.pctbHelp);
-            this.panel1.Controls.Add(this.pctbFlyColor);
             this.panel1.Controls.Add(this.pctbSoundOn);
             this.panel1.Controls.Add(this.pctbPlay);
             this.panel1.Controls.Add(this.pctbHome);
             this.panel1.Controls.Add(this.pctbPause);
-            this.panel1.Location = new System.Drawing.Point(1732, 11);
+            this.panel1.Location = new System.Drawing.Point(1721, 11);
             this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(249, 786);
             this.panel1.TabIndex = 32;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
-            // ptbstone5
+            // score
             // 
-            this.ptbstone5.Image = global::DoubleFours.Properties.Resources.stone5;
-            this.ptbstone5.Location = new System.Drawing.Point(154, 709);
-            this.ptbstone5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.ptbstone5.Name = "ptbstone5";
-            this.ptbstone5.Size = new System.Drawing.Size(36, 36);
-            this.ptbstone5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.ptbstone5.TabIndex = 37;
-            this.ptbstone5.TabStop = false;
+            this.score.AutoSize = true;
+            this.score.BackColor = System.Drawing.Color.Transparent;
+            this.score.Font = new System.Drawing.Font("Algerian", 25.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.score.ForeColor = System.Drawing.Color.Gold;
+            this.score.Location = new System.Drawing.Point(53, 604);
+            this.score.Name = "score";
+            this.score.Size = new System.Drawing.Size(45, 46);
+            this.score.TabIndex = 32;
+            this.score.Text = "0";
+            this.score.Click += new System.EventHandler(this.score_Click);
             // 
-            // ptbstone4
+            // score_title
             // 
-            this.ptbstone4.Image = global::DoubleFours.Properties.Resources.stone4;
-            this.ptbstone4.Location = new System.Drawing.Point(117, 708);
-            this.ptbstone4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.ptbstone4.Name = "ptbstone4";
-            this.ptbstone4.Size = new System.Drawing.Size(36, 36);
-            this.ptbstone4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.ptbstone4.TabIndex = 36;
-            this.ptbstone4.TabStop = false;
-            // 
-            // ptbstone3
-            // 
-            this.ptbstone3.Image = global::DoubleFours.Properties.Resources.stone3;
-            this.ptbstone3.Location = new System.Drawing.Point(80, 708);
-            this.ptbstone3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.ptbstone3.Name = "ptbstone3";
-            this.ptbstone3.Size = new System.Drawing.Size(36, 36);
-            this.ptbstone3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.ptbstone3.TabIndex = 35;
-            this.ptbstone3.TabStop = false;
-            // 
-            // ptbstone2
-            // 
-            this.ptbstone2.Image = global::DoubleFours.Properties.Resources.stone2;
-            this.ptbstone2.Location = new System.Drawing.Point(42, 709);
-            this.ptbstone2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.ptbstone2.Name = "ptbstone2";
-            this.ptbstone2.Size = new System.Drawing.Size(36, 36);
-            this.ptbstone2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.ptbstone2.TabIndex = 34;
-            this.ptbstone2.TabStop = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::DoubleFours.Properties.Resources.stonebar;
-            this.pictureBox1.Location = new System.Drawing.Point(2, 707);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(228, 40);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 32;
-            this.pictureBox1.TabStop = false;
+            this.score_title.AutoSize = true;
+            this.score_title.BackColor = System.Drawing.Color.Transparent;
+            this.score_title.Font = new System.Drawing.Font("Algerian", 25.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.score_title.ForeColor = System.Drawing.Color.Gold;
+            this.score_title.Location = new System.Drawing.Point(53, 529);
+            this.score_title.Name = "score_title";
+            this.score_title.Size = new System.Drawing.Size(112, 46);
+            this.score_title.TabIndex = 4;
+            this.score_title.Text = "Điểm";
             // 
             // pctbReset
             // 
@@ -383,7 +302,7 @@ namespace DoubleFours
             // 
             this.pctbHelp.BackColor = System.Drawing.Color.Transparent;
             this.pctbHelp.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pctbHelp.Image = ((System.Drawing.Image)(resources.GetObject("pctbHelp.Image")));
+            this.pctbHelp.Image = global::DoubleFours.Properties.Resources.help;
             this.pctbHelp.Location = new System.Drawing.Point(134, 292);
             this.pctbHelp.Name = "pctbHelp";
             this.pctbHelp.Size = new System.Drawing.Size(89, 88);
@@ -393,20 +312,17 @@ namespace DoubleFours
             this.pctbHelp.Click += new System.EventHandler(this.pctbHelp_Click);
             this.pctbHelp.MouseHover += new System.EventHandler(this.pctbHelp_MouseHover);
             // 
-            // pctbFlyColor
+            // BgMusic
             // 
-            this.pctbFlyColor.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.pctbFlyColor.BackColor = System.Drawing.Color.Transparent;
-            this.pctbFlyColor.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pctbFlyColor.Image = ((System.Drawing.Image)(resources.GetObject("pctbFlyColor.Image")));
-            this.pctbFlyColor.Location = new System.Drawing.Point(49, 420);
-            this.pctbFlyColor.Name = "pctbFlyColor";
-            this.pctbFlyColor.Size = new System.Drawing.Size(137, 264);
-            this.pctbFlyColor.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pctbFlyColor.TabIndex = 0;
-            this.pctbFlyColor.TabStop = false;
-            this.pctbFlyColor.Click += new System.EventHandler(this.pctbFlyColor_Click);
-            this.pctbFlyColor.MouseHover += new System.EventHandler(this.pctbFlyColor_MouseHover);
+            this.BgMusic.Enabled = true;
+            this.BgMusic.Location = new System.Drawing.Point(1447, 898);
+            this.BgMusic.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.BgMusic.Name = "BgMusic";
+            this.BgMusic.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("BgMusic.OcxState")));
+            this.BgMusic.Size = new System.Drawing.Size(75, 23);
+            this.BgMusic.TabIndex = 30;
+            this.BgMusic.Visible = false;
+            this.BgMusic.PlayStateChange += new AxWMPLib._WMPOCXEvents_PlayStateChangeEventHandler(this.BgMusic_PlayStateChange);
             // 
             // Pika2Vn
             // 
@@ -424,34 +340,27 @@ namespace DoubleFours
             this.Controls.Add(this.pnlChessBoard);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "Pika2Vn";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Trúc xanh";
+            this.Text = "Pika2Vn";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Form1_FormClosed);
+            this.Load += new System.EventHandler(this.Pika2Vn_Load);
             ((System.ComponentModel.ISupportInitialize)(this.progressBar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctbLifeTime)).EndInit();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.BgMusic)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctbPause)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctbHome)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctbPlay)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctbSoundOn)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctbSoundOff)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ptbstone1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ptbstone6)).EndInit();
             this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.ptbstone5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ptbstone4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ptbstone3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ptbstone2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pctbReset)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctbHelp)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pctbFlyColor)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BgMusic)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -462,7 +371,7 @@ namespace DoubleFours
 
         #endregion
         private System.Windows.Forms.Timer Timer;
-        private System.Windows.Forms.Panel pnlChessBoard;
+        public System.Windows.Forms.Panel pnlChessBoard;
         private System.Windows.Forms.PictureBox progressBar;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem menuToolStripMenuItem;
@@ -476,19 +385,12 @@ namespace DoubleFours
         private System.Windows.Forms.PictureBox pctbPause;
         private System.Windows.Forms.PictureBox pctbSoundOn;
         private System.Windows.Forms.PictureBox pctbSoundOff;
-        private System.Windows.Forms.PictureBox ptbstone1;
-        private System.Windows.Forms.PictureBox ptbstone6;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.PictureBox ptbstone5;
-        private System.Windows.Forms.PictureBox ptbstone4;
-        private System.Windows.Forms.PictureBox ptbstone3;
-        private System.Windows.Forms.PictureBox ptbstone2;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pctbReset;
         private System.Windows.Forms.PictureBox pctbHelp;
-        private System.Windows.Forms.PictureBox pctbFlyColor;
         private System.Windows.Forms.PictureBox pctbHome;
         public System.Windows.Forms.PictureBox pctbPlay;
+        private System.Windows.Forms.Label score_title;
+        public System.Windows.Forms.Label score;
     }
 }
-
