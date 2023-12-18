@@ -133,14 +133,14 @@
   <data name="soundLose" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\soundLose.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="slowPokemon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\slowPokemon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="hinhnen" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\hinhnen.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Pikachu" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Pikachu.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="stone6" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\stone6.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="play" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\play.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -160,14 +160,14 @@
   <data name="echXanh1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\echXanh.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="progressbarCrop" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\progressbarCrop.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="soundWin" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\soundWin.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="wallpaper_menu" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\wallpaper_menu.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="stone3" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\stone3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="soundWin" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\soundWin.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="help" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\help.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -205,14 +205,8 @@
   <data name="continues" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\continues.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="repeat" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\repeat.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="stone4" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\stone4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="stone5" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\stone5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="progressbarCrop" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\progressbarCrop.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="progressbar" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\progressbar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -220,8 +214,8 @@
   <data name="sound-off" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\sound-off.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="progressbarEch" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\progressbarEch.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="stone6" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\stone6.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="tieptuc" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\tieptuc1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -229,14 +223,20 @@
   <data name="Nope" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Nope.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="Theme" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Theme.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="reee" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\reee.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="stone5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\stone5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="thanos" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\thanos.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="crossCursor" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\crossCursor.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="repeat" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\repeat.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="sound-on1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\sound-on1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -250,8 +250,14 @@
   <data name="thoat" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\thoat1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="reee" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\reee.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="Theme" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Theme.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="progressbarEch" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\progressbarEch.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="stone4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\stone4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="resume" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\resume.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -259,7 +265,7 @@
   <data name="Click" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Click.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="slowPokemon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\slowPokemon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="wallpaper_menu1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\wallpaper_menu.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

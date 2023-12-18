@@ -273,6 +273,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Resources\batdau.png" />
+    <None Include="Resources\wallpaper_menu.jpg" />
     <None Include="Resources\tieptuc1.png" />
     <None Include="Resources\batdau1.png" />
     <Content Include="Resources\Click.wav" />

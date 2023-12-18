@@ -54,7 +54,6 @@ namespace DoubleFours
         private void Levels_FormClosed(object sender, FormClosedEventArgs e)
         {
             Program.menu.pctbBatDau.Enabled = true;
-            Program.menu.pctbHuongDan.Enabled = true;
 
             if(Option.pause == true)//game đang chơi giữa chừng
             Program.menu.pctbTiepTuc.Enabled = true;

@@ -128,7 +128,7 @@ namespace DoubleFours
             this.menuStrip1.Location = new System.Drawing.Point(-223, -26);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.RenderMode = System.Windows.Forms.ToolStripRenderMode.Professional;
-            this.menuStrip1.Size = new System.Drawing.Size(77, 30);
+            this.menuStrip1.Size = new System.Drawing.Size(76, 28);
             this.menuStrip1.TabIndex = 28;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -139,7 +139,7 @@ namespace DoubleFours
             this.chếĐộChơiToolStripMenuItem});
             this.menuToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.menuToolStripMenuItem.Name = "menuToolStripMenuItem";
-            this.menuToolStripMenuItem.Size = new System.Drawing.Size(63, 26);
+            this.menuToolStripMenuItem.Size = new System.Drawing.Size(63, 24);
             this.menuToolStripMenuItem.Text = "Menu";
             // 
             // chếĐộChơiToolStripMenuItem

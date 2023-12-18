@@ -29,68 +29,26 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Menu));
-            this.btnBack = new System.Windows.Forms.Button();
-            this.pctbHDSD = new System.Windows.Forms.PictureBox();
             this.pctbThoat = new System.Windows.Forms.PictureBox();
-            this.pctbHuongDan = new System.Windows.Forms.PictureBox();
             this.pctbTiepTuc = new System.Windows.Forms.PictureBox();
             this.pctbBatDau = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pctbHDSD)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctbThoat)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pctbHuongDan)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctbTiepTuc)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctbBatDau)).BeginInit();
             this.SuspendLayout();
-            // 
-            // btnBack
-            // 
-            this.btnBack.Enabled = false;
-            this.btnBack.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBack.Location = new System.Drawing.Point(1538, 153);
-            this.btnBack.Name = "btnBack";
-            this.btnBack.Size = new System.Drawing.Size(107, 43);
-            this.btnBack.TabIndex = 12;
-            this.btnBack.Text = "Quay Lại";
-            this.btnBack.UseVisualStyleBackColor = true;
-            this.btnBack.Visible = false;
-            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
-            // 
-            // pctbHDSD
-            // 
-            this.pctbHDSD.BackColor = System.Drawing.Color.Transparent;
-            this.pctbHDSD.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pctbHDSD.Location = new System.Drawing.Point(715, 153);
-            this.pctbHDSD.Name = "pctbHDSD";
-            this.pctbHDSD.Size = new System.Drawing.Size(930, 558);
-            this.pctbHDSD.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pctbHDSD.TabIndex = 11;
-            this.pctbHDSD.TabStop = false;
             // 
             // pctbThoat
             // 
             this.pctbThoat.BackColor = System.Drawing.Color.Transparent;
             this.pctbThoat.Cursor = System.Windows.Forms.Cursors.PanNW;
             this.pctbThoat.Image = global::DoubleFours.Properties.Resources.thoat;
-            this.pctbThoat.Location = new System.Drawing.Point(134, 648);
+            this.pctbThoat.Location = new System.Drawing.Point(134, 707);
             this.pctbThoat.Name = "pctbThoat";
             this.pctbThoat.Size = new System.Drawing.Size(327, 96);
             this.pctbThoat.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pctbThoat.TabIndex = 10;
             this.pctbThoat.TabStop = false;
             this.pctbThoat.Click += new System.EventHandler(this.pctbThoat_Click);
-            // 
-            // pctbHuongDan
-            // 
-            this.pctbHuongDan.BackColor = System.Drawing.Color.Transparent;
-            this.pctbHuongDan.Cursor = System.Windows.Forms.Cursors.PanNW;
-            this.pctbHuongDan.Image = global::DoubleFours.Properties.Resources.huongdan;
-            this.pctbHuongDan.Location = new System.Drawing.Point(134, 474);
-            this.pctbHuongDan.Name = "pctbHuongDan";
-            this.pctbHuongDan.Size = new System.Drawing.Size(327, 96);
-            this.pctbHuongDan.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pctbHuongDan.TabIndex = 9;
-            this.pctbHuongDan.TabStop = false;
-            this.pctbHuongDan.Click += new System.EventHandler(this.pctbHuongDan_Click);
             // 
             // pctbTiepTuc
             // 
@@ -123,13 +81,10 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::DoubleFours.Properties.Resources.menu4;
+            this.BackgroundImage = global::DoubleFours.Properties.Resources.wallpaper_menu1;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1924, 1055);
-            this.Controls.Add(this.btnBack);
-            this.Controls.Add(this.pctbHDSD);
             this.Controls.Add(this.pctbThoat);
-            this.Controls.Add(this.pctbHuongDan);
             this.Controls.Add(this.pctbTiepTuc);
             this.Controls.Add(this.pctbBatDau);
             this.DoubleBuffered = true;
@@ -138,9 +93,7 @@
             this.Text = "Trúc xanh";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Menu_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pctbHDSD)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctbThoat)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pctbHuongDan)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctbTiepTuc)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctbBatDau)).EndInit();
             this.ResumeLayout(false);
@@ -148,12 +101,8 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Button btnBack;
-        private System.Windows.Forms.PictureBox pctbHDSD;
         public System.Windows.Forms.PictureBox pctbTiepTuc;
         public System.Windows.Forms.PictureBox pctbBatDau;
         public System.Windows.Forms.PictureBox pctbThoat;
-        public System.Windows.Forms.PictureBox pctbHuongDan;
     }
 }
